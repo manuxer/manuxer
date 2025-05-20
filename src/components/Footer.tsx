@@ -15,7 +15,7 @@ const Footer = () => {
               className="h-6 w-auto"
             />
             <Link to="/" className="text-lg font-medium font-mono hover:opacity-80 transition-opacity">
-              Manuxer
+              manuxer
             </Link>
             <p className="mt-1 text-sm text-muted-foreground">
               UX Designer based in New York
@@ -46,7 +46,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t text-center md:text-left">
           <p className="text-xs text-muted-foreground">
-            © {currentYear} Manuxer. All rights reserved.
+            © {currentYear} manuxer. All rights reserved.
           </p>
         </div>
       </div>

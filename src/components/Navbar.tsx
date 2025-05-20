@@ -20,7 +20,7 @@ const Navbar = () => {
             alt="Manuxer Logo" 
             className="h-8 w-auto"
           />
-          <span className="font-mono text-xl font-semibold">Manuxer</span>
+          <span className="font-mono text-xl font-semibold">manuxer</span>
         </Link>
 
         {/* Mobile menu button */}
