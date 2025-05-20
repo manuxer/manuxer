@@ -8,7 +8,12 @@ const Footer = () => {
     <footer className="border-t py-12 mt-24">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-4 md:mb-0 flex items-center gap-2">
+            <img 
+              src="/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png" 
+              alt="Jane Doe Logo" 
+              className="h-6 w-auto"
+            />
             <Link to="/" className="text-lg font-medium font-mono hover:opacity-80 transition-opacity">
               Jane Doe
             </Link>

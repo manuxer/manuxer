@@ -14,8 +14,13 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container-custom h-16 flex items-center justify-between">
-        <Link to="/" className="text-xl font-semibold hover:opacity-80 transition-opacity">
-          <span className="font-mono">Jane Doe</span>
+        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <img 
+            src="/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png" 
+            alt="Jane Doe Logo" 
+            className="h-8 w-auto"
+          />
+          <span className="font-mono text-xl font-semibold">Jane Doe</span>
         </Link>
 
         {/* Mobile menu button */}
