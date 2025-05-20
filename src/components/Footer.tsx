@@ -18,7 +18,7 @@ const Footer = () => {
               manuxer
             </Link>
             <p className="mt-1 text-sm text-muted-foreground">
-              UX Designer based in New York
+              UX Designer based in DMV
             </p>
           </div>
           
