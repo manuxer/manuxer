@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="mb-4 md:mb-0 flex items-center gap-2">
             <img 
               src="/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png" 
-              alt="Jane Doe Logo" 
+              alt="Manuxer Logo" 
               className="h-6 w-auto"
             />
             <Link to="/" className="text-lg font-medium font-mono hover:opacity-80 transition-opacity">
-              Jane Doe
+              Manuxer
             </Link>
             <p className="mt-1 text-sm text-muted-foreground">
               UX Designer based in New York
@@ -36,7 +36,7 @@ const Footer = () => {
               Resume
             </Link>
             <a 
-              href="mailto:contact@janedoe.com" 
+              href="mailto:contact@manuxer.com" 
               className="text-sm hover:text-foreground/80 transition-colors"
             >
               Contact
@@ -46,7 +46,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t text-center md:text-left">
           <p className="text-xs text-muted-foreground">
-            © {currentYear} Jane Doe. All rights reserved.
+            © {currentYear} Manuxer. All rights reserved.
           </p>
         </div>
       </div>

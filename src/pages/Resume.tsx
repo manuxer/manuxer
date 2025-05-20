@@ -32,11 +32,11 @@ const Resume = () => {
               {/* Personal Info */}
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
                 <div>
-                  <h2 className="text-3xl font-bold">Jane Doe</h2>
+                  <h2 className="text-3xl font-bold">Manuxer</h2>
                   <p className="text-xl text-muted-foreground">UX Designer</p>
                 </div>
                 <div className="mt-4 md:mt-0 text-right">
-                  <p>contact@janedoe.com</p>
+                  <p>contact@manuxer.com</p>
                   <p>(123) 456-7890</p>
                   <p>New York, NY</p>
                 </div>

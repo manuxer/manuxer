@@ -17,10 +17,10 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <img 
             src="/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png" 
-            alt="Jane Doe Logo" 
+            alt="Manuxer Logo" 
             className="h-8 w-auto"
           />
-          <span className="font-mono text-xl font-semibold">Jane Doe</span>
+          <span className="font-mono text-xl font-semibold">Manuxer</span>
         </Link>
 
         {/* Mobile menu button */}
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/about" className="text-sm hover:text-foreground/80 transition-colors">About</Link>
           <Link to="/resume" className="text-sm hover:text-foreground/80 transition-colors">Resume</Link>
           <Button asChild size="sm">
-            <Link to="mailto:contact@janedoe.com">
+            <Link to="mailto:contact@manuxer.com">
               Contact
             </Link>
           </Button>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >Resume</Link>
               <Button className="mt-4" asChild>
-                <Link to="mailto:contact@janedoe.com">
+                <Link to="mailto:contact@manuxer.com">
                   Contact
                 </Link>
               </Button>

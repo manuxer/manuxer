@@ -99,7 +99,7 @@ const Index = () => {
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="mb-6">Hi, I'm Jane Doe</h2>
+                <h2 className="mb-6">Hi, I'm Manuxer</h2>
                 <p className="mb-6 text-lg">
                   A UX designer with over 5 years of experience creating digital products that balance business goals with user needs.
                 </p>
@@ -113,7 +113,7 @@ const Index = () => {
               <div className="bg-muted/30 rounded-lg p-4">
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Jane Doe, UX Designer"
+                  alt="Manuxer, UX Designer"
                   className="w-full h-auto rounded"
                 />
               </div>

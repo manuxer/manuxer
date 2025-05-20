@@ -19,7 +19,7 @@ const About = () => {
               <div className="md:w-1/2 order-2 md:order-1">
                 <h1 className="mb-6">About Me</h1>
                 <p className="text-xl mb-4">
-                  I'm Jane Doe, a UX designer passionate about creating 
+                  I'm Manuxer, a UX designer passionate about creating 
                   digital experiences that are both beautiful and functional.
                 </p>
                 <p className="mb-8">
@@ -42,7 +42,7 @@ const About = () => {
               <div className="md:w-1/2 order-1 md:order-2">
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Jane Doe, UX Designer"
+                  alt="Manuxer, UX Designer"
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
