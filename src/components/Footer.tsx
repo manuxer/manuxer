@@ -36,7 +36,7 @@ const Footer = () => {
               Resume
             </Link>
             <a 
-              href="mailto:contact@manuxer.com" 
+              href="mailto:manuxdesign@gmail.com" 
               className="text-sm hover:text-foreground/80 transition-colors"
             >
               Contact

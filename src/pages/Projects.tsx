@@ -8,31 +8,45 @@ import ContactButton from "@/components/ContactButton";
 const projects = [
   {
     id: 1,
-    title: "Finance App Redesign",
-    category: "Mobile App",
-    description: "Redesigning a banking application to improve user experience and accessibility for all users.",
-    imageUrl: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "User Experience Design | NDA",
+    category: "UX | Product design | Research",
+    description: "User experience design of enterprise products impacting over 1.6M users",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    category: "Web Design",
-    description: "Creating an intuitive shopping experience with improved conversion rates and user engagement.",
-    imageUrl: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Usability Evaluation and Interaction Design",
+    category: "UX | Research",
+    description: "Usability analysis and redesign of the Postal Service website",
+    imageUrl: "https://manuxer.com/files/USPS/Logo/USPS_logo.png",
   },
   {
     id: 3,
-    title: "Health Tracking Dashboard",
-    category: "Web Application",
-    description: "Designing a dashboard for health professionals to monitor patient data and trends.",
-    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Accessibility Evaluation and Inclusive Design",
+    category: "Accessibility",
+    description: "Accessibility evaluation and remediation of the MBTA intranet website",
+    imageUrl: "https://manuxer.com/files/MBTA/img/MBTA-hero.jpeg",
   },
   {
     id: 4,
-    title: "Travel Booking Platform",
-    category: "Mobile & Web App",
-    description: "Streamlining the process of booking travel accommodations and experiences.",
-    imageUrl: "https://images.unsplash.com/photo-1476900543704-4312b78632f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "My Experiments",
+    category: "UI/UX",
+    description: "A collection of my design experiments",
+    imageUrl: "https://manuxer.com/files/Experiments/VisualSearch.png",
+  },
+  {
+    id: 5,
+    title: "Usability Engineering",
+    category: "UX Specialist",
+    description: "Design - Evaluate - Iterate",
+    imageUrl: "https://manuxer.com/img/UW.png",
+  },
+  {
+    id: 6,
+    title: "My Artwork",
+    category: "Artwork / Paintings",
+    description: "An artist is a simplifier.. Art is the elimination of the unnecessary!",
+    imageUrl: "https://manuxer.com/files/MyPaintings/1.jpg",
   },
 ];
 
@@ -45,10 +59,9 @@ const Projects = () => {
         {/* Header */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container-custom text-center">
-            <h1 className="mb-6">My Projects</h1>
+            <h1 className="mb-6">Work</h1>
             <p className="text-xl max-w-2xl mx-auto text-muted-foreground">
-              A collection of my recent work across mobile and web platforms, 
-              focusing on user experience and interface design.
+              A collection of my work spanning UX research, product design, accessibility, and creative experiments.
             </p>
           </div>
         </section>

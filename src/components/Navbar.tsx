@@ -35,9 +35,9 @@ const Navbar = () => {
           <Link to="/about" className="text-sm hover:text-foreground/80 transition-colors">About</Link>
           <Link to="/resume" className="text-sm hover:text-foreground/80 transition-colors">Resume</Link>
           <Button asChild size="sm">
-            <Link to="mailto:contact@manuxer.com">
+            <a href="mailto:manuxdesign@gmail.com">
               Contact
-            </Link>
+            </a>
           </Button>
         </nav>
 
@@ -66,9 +66,9 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >Resume</Link>
               <Button className="mt-4" asChild>
-                <Link to="mailto:contact@manuxer.com">
+                <a href="mailto:manuxdesign@gmail.com">
                   Contact
-                </Link>
+                </a>
               </Button>
             </nav>
           </div>

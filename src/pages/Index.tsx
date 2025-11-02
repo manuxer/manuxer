@@ -11,31 +11,31 @@ import { FileText } from "lucide-react";
 const featuredProjects = [
   {
     id: 1,
-    title: "Finance App Redesign",
-    category: "Mobile App",
-    description: "Redesigning a banking application to improve user experience and accessibility for all users.",
-    imageUrl: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "User Experience Design | NDA",
+    category: "UX | Product design | Research",
+    description: "User experience design of enterprise products impacting over 1.6M users",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    category: "Web Design",
-    description: "Creating an intuitive shopping experience with improved conversion rates and user engagement.",
-    imageUrl: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Usability Evaluation and Interaction Design",
+    category: "UX | Research",
+    description: "Usability analysis and redesign of the Postal Service website",
+    imageUrl: "https://manuxer.com/files/USPS/Logo/USPS_logo.png",
   },
   {
     id: 3,
-    title: "Health Tracking Dashboard",
-    category: "Web Application",
-    description: "Designing a dashboard for health professionals to monitor patient data and trends.",
-    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Accessibility Evaluation and Inclusive Design",
+    category: "Accessibility",
+    description: "Accessibility evaluation and remediation of the MBTA intranet website",
+    imageUrl: "https://manuxer.com/files/MBTA/img/MBTA-hero.jpeg",
   },
   {
     id: 4,
-    title: "Travel Booking Platform",
-    category: "Mobile & Web App",
-    description: "Streamlining the process of booking travel accommodations and experiences.",
-    imageUrl: "https://images.unsplash.com/photo-1476900543704-4312b78632f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "My Experiments",
+    category: "UI/UX",
+    description: "A collection of my design experiments",
+    imageUrl: "https://manuxer.com/files/Experiments/VisualSearch.png",
   },
 ];
 
@@ -50,20 +50,19 @@ const Index = () => {
           <div className="container-custom">
             <div className="max-w-3xl">
               <h1 className="mb-6">
-                Creating impactful digital experiences through thoughtful design
+                Hi, I am Manu
               </h1>
               <p className="text-xl md:text-2xl mb-10 text-muted-foreground">
-                UX Designer specializing in creating intuitive, accessible, and beautiful digital products that solve real user problems.
+                Product, User experience, Interaction designer at Amazon
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
-                  <Link to="/projects">View Projects</Link>
+                  <Link to="/projects">View Work</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/resume">
-                    <FileText className="mr-2 h-4 w-4" />
-                    Resume
-                  </Link>
+                  <a href="mailto:manuxdesign@gmail.com">
+                    Get in Touch
+                  </a>
                 </Button>
               </div>
             </div>
@@ -99,21 +98,26 @@ const Index = () => {
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="mb-6">Hi, I'm Manuxer</h2>
+                <h2 className="mb-6">About Me</h2>
                 <p className="mb-6 text-lg">
-                  A UX designer with over 5 years of experience creating digital products that balance business goals with user needs.
+                  Product, User experience, and Interaction designer currently working at Amazon, specializing in enterprise products that impact over 1.6M users.
                 </p>
                 <p className="mb-8 text-lg">
-                  I focus on creating inclusive and accessible design solutions that help people accomplish their goals effectively.
+                  I focus on creating inclusive and accessible design solutions through usability engineering, research, and iterative design processes.
                 </p>
+                <div className="space-y-2 text-sm mb-8">
+                  <p>📍 Maryland, USA</p>
+                  <p>📧 <a href="mailto:manuxdesign@gmail.com" className="hover:underline">manuxdesign@gmail.com</a></p>
+                  <p>📱 <a href="tel:240-408-9520" className="hover:underline">(240) 408-9520</a></p>
+                </div>
                 <Button asChild>
                   <Link to="/about">More About Me</Link>
                 </Button>
               </div>
               <div className="bg-muted/30 rounded-lg p-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Manuxer, UX Designer"
+                  src="https://manuxer.com/img/BCard%20copy.png"
+                  alt="manuxer, UX Designer"
                   className="w-full h-auto rounded"
                 />
               </div>
