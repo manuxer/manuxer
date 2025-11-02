@@ -6,84 +6,182 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
 
-// Sample project data (expanded version of the data in other files)
+// Project data from manuxer.com
 const projects = [
   {
     id: 1,
-    title: "Finance App Redesign",
-    category: "Mobile App",
-    client: "FinTech Solutions Inc.",
-    duration: "3 months",
-    year: "2023",
-    role: "Lead UX/UI Designer",
-    description: "Redesigning a banking application to improve user experience and accessibility for all users.",
-    challenge: "The existing app had poor usability metrics and high drop-off rates during key financial transactions. Users reported confusion with navigation and task completion difficulty.",
-    solution: "I conducted extensive user research to identify pain points, then redesigned the information architecture and core user flows. The new design focused on clarity, accessibility, and providing contextual guidance during complex financial tasks.",
-    outcome: "The redesigned app saw a 45% increase in user engagement, 32% reduction in support tickets, and a 27% increase in successful transaction completions.",
-    imageUrl: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    processImages: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    ]
+    title: "User Experience Design | NDA",
+    category: "UX | Product design | Research",
+    client: "Amazon",
+    duration: "Ongoing",
+    year: "2020 - Present",
+    role: "Product, User experience, Interaction designer",
+    description: "User experience design of enterprise products impacting over 1.6M users at Amazon.",
+    challenge: "Designing enterprise products for a massive scale while maintaining usability and meeting the diverse needs of over 1.6 million users across various roles and workflows.",
+    solution: "Applied user-centered design principles, conducted extensive research, and created scalable design systems that work across multiple product lines. Collaborated with cross-functional teams to ensure design solutions align with business goals and user needs.",
+    outcome: "Successfully delivered user experience design for enterprise products serving 1.6M+ users, improving productivity and user satisfaction across Amazon's internal tools.",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    processImages: [],
+    isNDA: true
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    category: "Web Design",
-    client: "StyleBoutique",
-    duration: "4 months",
-    year: "2023",
-    role: "UX Designer & Researcher",
-    description: "Creating an intuitive shopping experience with improved conversion rates and user engagement.",
-    challenge: "The client's previous website had an outdated design, poor mobile experience, and a complicated checkout process leading to cart abandonment.",
-    solution: "I reimagined the entire shopping experience with a focus on product discovery, streamlined checkout, and mobile responsiveness. Applied user-centered design principles to create an intuitive interface that guides users through their shopping journey.",
-    outcome: "The new platform achieved a 38% increase in conversion rate, 52% decrease in cart abandonment, and a 64% increase in mobile purchases.",
-    imageUrl: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Usability Evaluation and Interaction Design",
+    category: "UX | Research",
+    client: "USPS",
+    duration: "Multiple projects",
+    year: "2020",
+    role: "UX Designer",
+    description: "Usability analysis and redesign of the Postal Service website",
+    overview: "USPS.com is the digital storefront for United States Postal Service®. The site is an important and ever-growing part of the daily USPS® delivery system, providing 24-hour access to USPS® products and services.",
+    challenge: "USPS.com needed continuous improvement to handle increased traffic (especially during COVID), improve customer experience, and reduce burden on Post Office™ locations. The site serves the American public (residential consumers), small and medium businesses, as well as foreign shippers.",
+    solution: "Implemented a comprehensive UX strategy including usability testing, heuristic evaluations, and continuous improvement processes. Created Digital Style Guide (DSG) and UX Heuristics to ensure consistent customer experience. Worked with 10 domain-specific teams including Content Strategy, Design, Digital Analytics, and User Experience & UX Design.",
+    outcome: "Successfully improved USPS.com's digital experience, helping it handle significant traffic increases during COVID-19. Delivered projects including PO Locator redesign and USPS® Online Postal Store improvements.",
+    imageUrl: "https://manuxer.com/files/USPS/Logo/USPS_logo.png",
     processImages: [
-      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586282391129-76a6df230234?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      "https://manuxer.com/files/USPS/usps_ux/usps-hero1.png",
+      "https://manuxer.com/files/USPS/usps_ux/cx-at-usps.png",
+      "https://manuxer.com/files/USPS/usps_ux/ux-steps.png",
+      "https://manuxer.com/files/USPS/usps_ux/usps-heuristic.png",
+      "https://manuxer.com/files/USPS/usps_ux/usability-testing.png"
+    ],
+    subProjects: [
+      {
+        title: "PO Locator - Find USPS® Locations",
+        description: "A tool to find USPS Locations on USPS.com (or send directions) and hours of operation.",
+        imageUrl: "https://manuxer.com/files/USPS/PO_Locator/img/po-banner.png"
+      },
+      {
+        title: "USPS® Online Postal Store",
+        description: "Online Postal Store - Order stamps, shipping supplies, and unique items only available from the United States Postal Service.",
+        imageUrl: "https://manuxer.com/files/USPS/usps_ux/usps-store.png"
+      }
     ]
   },
   {
     id: 3,
-    title: "Health Tracking Dashboard",
-    category: "Web Application",
-    client: "HealthMetrics",
-    duration: "5 months",
-    year: "2022",
-    role: "UX/UI Designer",
-    description: "Designing a dashboard for health professionals to monitor patient data and trends.",
-    challenge: "Healthcare providers were struggling with a complex legacy system that made it difficult to access critical patient information quickly and efficiently.",
-    solution: "I developed a comprehensive dashboard that visualizes patient health metrics with clear hierarchy and information architecture. The design incorporates accessibility features and customizable views for different healthcare specialties.",
-    outcome: "The new dashboard reduced time spent accessing patient information by 40% and improved diagnostic accuracy according to user feedback. 92% of healthcare providers reported high satisfaction with the new system.",
-    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Accessibility Evaluation and Inclusive Design",
+    category: "Accessibility",
+    client: "MBTA",
+    duration: "3 months",
+    year: "2021",
+    role: "UX Designer & Accessibility Specialist",
+    description: "Accessibility evaluation and remediation of the MBTA intranet website",
+    overview: "The MBTA intranet system is an internal application for MBTA employees that enables communication, information sharing, and job task fulfillment. The system includes features such as discussion forums, surveys, directories, content management, and analytics.",
+    challenge: "The accessibility audit identified areas where the system could introduce barriers or cause difficulty for people with disabilities. Testing covered 41 pages and use cases using WCAG 2.1 Level AA as a guide.",
+    solution: "Conducted comprehensive accessibility evaluation using multiple assistive technologies including JAWS screen reader, Dragon Naturally Speaking, keyboard-only navigation, and color contrast tools. Tested across Chrome, Internet Explorer, and Firefox browsers. Provided detailed findings and recommendations for remediation.",
+    outcome: "Delivered comprehensive accessibility report with severity ratings and actionable recommendations. Identified key issues including missing alt text, keyboard accessibility problems, focus indicators, and WCAG compliance gaps. Provided clear remediation strategies for each finding.",
+    imageUrl: "https://manuxer.com/files/MBTA/img/MBTA-hero.jpeg",
     processImages: [
-      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      "https://manuxer.com/files/MBTA/img/MBTA-hero2.jpeg",
+      "https://manuxer.com/files/MBTA/img/wcag2-1.png",
+      "https://manuxer.com/files/MBTA/img/tools.png",
+      "https://manuxer.com/files/MBTA/img/MBTA-main.png",
+      "https://manuxer.com/files/MBTA/img/report.png"
+    ],
+    methodology: [
+      "Access the intranet system via web browser using user accounts provided by the MBTA team",
+      "Test selection of 41 pages and use cases (AKA tasks), as identified by the client",
+      "Use W3C's Web Content Accessibility Guidelines (WCAG 2.1) Level AA as a guide for this evaluation",
+      "Explore all areas of the screen, including the menus, forms, and other components, to ensure a complete accessibility review"
+    ],
+    tools: [
+      "Chrome's Accessibility Dev tools auditor - Lighthouse",
+      "JAWS - Screen Reader",
+      "Dragon Naturally Speaking - Speech Recognition Software",
+      "Color Contrast evaluation tool",
+      "Keyboard only evaluation"
     ]
   },
   {
     id: 4,
-    title: "Travel Booking Platform",
-    category: "Mobile & Web App",
-    client: "WanderWise",
-    duration: "6 months",
-    year: "2022",
-    role: "Product Designer",
-    description: "Streamlining the process of booking travel accommodations and experiences.",
-    challenge: "The client wanted to create a platform that simplified the complex process of planning and booking travel across multiple services (flights, hotels, activities).",
-    solution: "I designed a cross-platform solution that unified the booking experience while maintaining context and continuity. The interface uses progressive disclosure to manage complexity and features personalized recommendations based on user preferences.",
-    outcome: "The platform launched to positive user reviews with a 4.7/5 average rating. Users complete bookings 35% faster than industry average, and the company has seen 85% user retention after 3 months.",
-    imageUrl: "https://images.unsplash.com/photo-1476900543704-4312b78632f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "My Experiments",
+    category: "UI/UX",
+    client: "Personal Projects",
+    duration: "Ongoing",
+    year: "2019 - Present",
+    role: "Designer",
+    description: "A collection of my design experiments",
+    overview: "This portfolio showcases various UI/UX design experiments exploring different design patterns, interactions, and visual styles across mobile and web applications.",
+    challenge: "Exploring new design trends, experimenting with different interaction patterns, and pushing creative boundaries while maintaining usability and accessibility standards.",
+    solution: "Created diverse design concepts including SwiftPay (payment app), Visual Search interface, Furniture app, CinePass (movie booking), Food ordering app, and e-commerce signup flows. Each experiment focuses on solving specific UX challenges with innovative approaches.",
+    outcome: "Built a comprehensive portfolio of design experiments demonstrating versatility across different domains and design challenges. These experiments inform real-world project decisions and showcase design thinking capabilities.",
+    imageUrl: "https://manuxer.com/files/Experiments/VisualSearch.png",
     processImages: [
-      "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
-      "https://images.unsplash.com/photo-1616628188539-6be43f0e5f36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1606103920295-592aabd414df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      "https://manuxer.com/files/Experiments/SwiftPay.png",
+      "https://manuxer.com/files/Experiments/VisualSearch.png",
+      "https://manuxer.com/files/Experiments/Furniture%20app.png",
+      "https://manuxer.com/files/Experiments/cinePass.png",
+      "https://manuxer.com/files/Experiments/Food%20ordering%20app.png",
+      "https://manuxer.com/files/Experiments/e-commerce%20signup.png"
     ]
   },
+  {
+    id: 5,
+    title: "Usability Engineering",
+    category: "UX Specialist",
+    client: "University of Washington",
+    duration: "Academic project",
+    year: "2019",
+    role: "UX Specialist",
+    description: "Design - Evaluate - Iterate",
+    overview: "A comprehensive exploration of usability engineering principles and methodologies through academic research and practical application.",
+    challenge: "Understanding and applying systematic usability engineering processes including user research, iterative design, evaluation methods, and design refinement.",
+    solution: "Applied structured usability engineering methodology covering the complete design lifecycle: user research, persona development, task analysis, prototyping, usability testing, and iterative improvements based on findings.",
+    outcome: "Developed deep understanding of usability engineering principles and delivered practical design solutions validated through systematic evaluation methods.",
+    imageUrl: "https://manuxer.com/img/UW.png",
+    processImages: [
+      "https://manuxer.com/files/UW/1.png",
+      "https://manuxer.com/files/UW/2.png",
+      "https://manuxer.com/files/UW/3.png",
+      "https://manuxer.com/files/UW/4.png",
+      "https://manuxer.com/files/UW/5.png",
+      "https://manuxer.com/files/UW/6.png",
+      "https://manuxer.com/files/UW/7.png",
+      "https://manuxer.com/files/UW/8.png",
+      "https://manuxer.com/files/UW/9.png",
+      "https://manuxer.com/files/UW/10.png",
+      "https://manuxer.com/files/UW/11.png",
+      "https://manuxer.com/files/UW/12.png",
+      "https://manuxer.com/files/UW/13.png",
+      "https://manuxer.com/files/UW/14.png",
+      "https://manuxer.com/files/UW/15.png"
+    ]
+  },
+  {
+    id: 6,
+    title: "My Artwork",
+    category: "Artwork / Paintings",
+    client: "Personal Collection",
+    duration: "Ongoing",
+    year: "2015 - Present",
+    role: "Artist",
+    description: "An artist is a simplifier.. Art is the elimination of the unnecessary!",
+    overview: "A personal collection of artwork and paintings exploring various styles, mediums, and artistic expressions. This collection represents the creative foundation that informs my design work.",
+    challenge: "Expressing complex emotions and ideas through visual art while maintaining simplicity and clarity. Balancing artistic expression with intentional communication.",
+    solution: "Created diverse artwork ranging from abstract to representational pieces, experimenting with different techniques and mediums. Applied the principle that 'art is the elimination of the unnecessary' to focus on essential elements that convey meaning.",
+    outcome: "Developed a comprehensive art portfolio that demonstrates visual thinking, composition skills, and creative problem-solving abilities that translate directly into design work.",
+    imageUrl: "https://manuxer.com/files/MyPaintings/1.jpg",
+    processImages: [
+      "https://manuxer.com/files/MyPaintings/1.jpg",
+      "https://manuxer.com/files/MyPaintings/2.jpg",
+      "https://manuxer.com/files/MyPaintings/3.jpg",
+      "https://manuxer.com/files/MyPaintings/4.jpg",
+      "https://manuxer.com/files/MyPaintings/5.jpg",
+      "https://manuxer.com/files/MyPaintings/6.jpg",
+      "https://manuxer.com/files/MyPaintings/7.jpg",
+      "https://manuxer.com/files/MyPaintings/8.jpg",
+      "https://manuxer.com/files/MyPaintings/9.jpg",
+      "https://manuxer.com/files/MyPaintings/10.jpg",
+      "https://manuxer.com/files/MyPaintings/11.jpg",
+      "https://manuxer.com/files/MyPaintings/12.jpg",
+      "https://manuxer.com/files/MyPaintings/13.png",
+      "https://manuxer.com/files/MyPaintings/14.png",
+      "https://manuxer.com/files/MyPaintings/15.png",
+      "https://manuxer.com/files/MyPaintings/16.png",
+      "https://manuxer.com/files/MyPaintings/17.png"
+    ]
+  }
 ];
 
 const ProjectDetail = () => {
@@ -130,32 +228,92 @@ const ProjectDetail = () => {
                 </Button>
                 
                 <h2 className="text-3xl font-semibold mb-6">Overview</h2>
-                <p className="text-lg mb-6">{project.description}</p>
+                <p className="text-lg mb-6">{project.overview || project.description}</p>
                 
-                <h3 className="text-2xl font-semibold mb-4">The Challenge</h3>
-                <p className="mb-6">{project.challenge}</p>
+                {project.isNDA ? (
+                  <div className="bg-muted/50 border-l-4 border-primary p-6 rounded-r mb-8">
+                    <p className="text-sm font-medium">Note: This project is under NDA. Details are limited to protect confidential information.</p>
+                  </div>
+                ) : (
+                  <>
+                    <h3 className="text-2xl font-semibold mb-4">The Challenge</h3>
+                    <p className="mb-6">{project.challenge}</p>
+                    
+                    {project.methodology && (
+                      <>
+                        <h3 className="text-2xl font-semibold mb-4">Methodology</h3>
+                        <ul className="list-disc list-inside mb-6 space-y-2">
+                          {project.methodology.map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    
+                    {project.tools && (
+                      <>
+                        <h3 className="text-2xl font-semibold mb-4">Tools & Technologies</h3>
+                        <ul className="list-disc list-inside mb-6 space-y-2">
+                          {project.tools.map((tool: string, index: number) => (
+                            <li key={index}>{tool}</li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    
+                    <h3 className="text-2xl font-semibold mb-4">The Solution</h3>
+                    <p className="mb-6">{project.solution}</p>
+                    
+                    <h3 className="text-2xl font-semibold mb-4">Outcome</h3>
+                    <p className="mb-10">{project.outcome}</p>
+                  </>
+                )}
                 
-                <h3 className="text-2xl font-semibold mb-4">The Solution</h3>
-                <p className="mb-6">{project.solution}</p>
-                
-                <h3 className="text-2xl font-semibold mb-4">Outcome</h3>
-                <p className="mb-10">{project.outcome}</p>
+                {/* Sub Projects */}
+                {project.subProjects && project.subProjects.length > 0 && (
+                  <div className="mt-12 mb-12">
+                    <h3 className="text-2xl font-semibold mb-6">Related Projects</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {project.subProjects.map((subProject: any, index: number) => (
+                        <div key={index} className="border rounded-lg overflow-hidden">
+                          <img 
+                            src={subProject.imageUrl} 
+                            alt={subProject.title}
+                            className="w-full h-48 object-cover"
+                          />
+                          <div className="p-4">
+                            <h4 className="font-semibold mb-2">{subProject.title}</h4>
+                            <p className="text-sm text-muted-foreground">{subProject.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 
                 {/* Process Images */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-semibold mb-6">Design Process</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {project.processImages.map((img, index) => (
-                      <div key={index} className="rounded-lg overflow-hidden">
-                        <img 
-                          src={img} 
-                          alt={`Design process for ${project.title}`}
-                          className="w-full h-auto"
-                        />
-                      </div>
-                    ))}
+                {project.processImages.length > 0 && (
+                  <div className="mt-12">
+                    <h3 className="text-2xl font-semibold mb-6">
+                      {project.category === "Artwork / Paintings" ? "Gallery" : "Design Process"}
+                    </h3>
+                    <div className={`grid gap-4 ${
+                      project.category === "Artwork / Paintings" 
+                        ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" 
+                        : "grid-cols-1"
+                    }`}>
+                      {project.processImages.map((img: string, index: number) => (
+                        <div key={index} className="rounded-lg overflow-hidden">
+                          <img 
+                            src={img} 
+                            alt={`${project.category === "Artwork / Paintings" ? "Artwork" : "Design process"} for ${project.title}`}
+                            className="w-full h-auto"
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
               
               <div className="md:w-1/3">
