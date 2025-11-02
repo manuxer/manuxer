@@ -12,8 +12,8 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ id, title, category, description, imageUrl }: ProjectCardProps) => {
   return (
-    <Link to={`/projects/${id}`} className="block group">
-      <Card className="overflow-hidden border-none shadow-sm hover:shadow-md transition-all">
+    <Link to={`/projects/${id}`} className="block group h-full">
+      <Card className="overflow-hidden border-none shadow-sm hover:shadow-md transition-all h-full flex flex-col">
         <div className="aspect-[16/9] overflow-hidden">
           <img 
             src={imageUrl} 
@@ -21,10 +21,10 @@ const ProjectCard = ({ id, title, category, description, imageUrl }: ProjectCard
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />
         </div>
-        <CardContent className="p-6">
+        <CardContent className="p-6 flex-1 flex flex-col">
           <p className="text-sm font-medium text-muted-foreground mb-2">{category}</p>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <p className="text-muted-foreground line-clamp-2">{description}</p>
+          <p className="text-muted-foreground line-clamp-2 flex-1">{description}</p>
           <p className="mt-4 text-sm font-medium inline-flex items-center text-primary">
             View Case Study
             <svg 
