@@ -16,7 +16,7 @@ const projects = [
     duration: "Ongoing",
     year: "2020 - Present",
     role: "Product, User experience, Interaction designer",
-    description: "User experience design of enterprise products impacting over 1.6M users at Amazon.",
+    description: "User experience design and product strategy of enterprise products impacting over 1.5M users at Amazon.",
     challenge: "Designing enterprise products for a massive scale while maintaining usability and meeting the diverse needs of over 1.6 million users across various roles and workflows.",
     solution: "Applied user-centered design principles, conducted extensive research, and created scalable design systems that work across multiple product lines. Collaborated with cross-functional teams to ensure design solutions align with business goals and user needs.",
     outcome: "Successfully delivered user experience design for enterprise products serving 1.6M+ users, improving productivity and user satisfaction across Amazon's internal tools.",
@@ -321,7 +321,7 @@ const ProjectDetail = () => {
                   <h3 className="text-lg font-medium mb-4">Project Details</h3>
                   <dl className="space-y-4">
                     <div>
-                      <dt className="text-sm text-muted-foreground">Client</dt>
+                      <dt className="text-sm text-muted-foreground">Company</dt>
                       <dd className="font-medium">{project.client}</dd>
                     </div>
                     <div>

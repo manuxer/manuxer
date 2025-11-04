@@ -15,7 +15,7 @@ const Footer = () => {
               className="h-6 w-auto"
             />
             <Link to="/" className="text-lg font-medium font-mono hover:opacity-80 transition-opacity">
-              manuxer
+              Manu
             </Link>
             <p className="mt-1 text-sm text-muted-foreground">
               UX Designer based in DMV
@@ -45,9 +45,9 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center md:text-left">
-          <p className="text-xs text-muted-foreground">
-            © {currentYear} manuxer. All rights reserved.
-          </p>
+            <p className="text-xs text-muted-foreground">
+              © {currentYear} Manu. All rights reserved.
+            </p>
         </div>
       </div>
     </footer>

@@ -16,11 +16,13 @@ const Resume = () => {
           <div className="container-custom text-center">
             <h1 className="mb-6">Resume</h1>
             <p className="text-xl max-w-2xl mx-auto text-muted-foreground mb-8">
-              My professional background, experience, and skills in UX/UI design.
+              My professional background, experience, and skills in building human-first products
             </p>
-            <Button size="lg">
-              <Download className="mr-2 h-4 w-4" />
-              Download PDF
+            <Button asChild size="lg">
+              <a href="/Manu_Resume.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download
+              </a>
             </Button>
           </div>
         </section>
@@ -32,23 +34,20 @@ const Resume = () => {
               {/* Personal Info */}
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
                 <div>
-                  <h2 className="text-3xl font-bold">Manuxer</h2>
-                  <p className="text-xl text-muted-foreground">UX Designer</p>
+                  <h2 className="text-3xl font-bold">Manu</h2>
+                  <p className="text-xl text-muted-foreground">UX & Product Designer</p>
                 </div>
                 <div className="mt-4 md:mt-0 text-right">
-                  <p>contact@manuxer.com</p>
-                  <p>(123) 456-7890</p>
-                  <p>New York, NY</p>
+                  <p>manuxdesign@gmail.com</p>
+                  <p>Based in DMV</p>
                 </div>
               </div>
               
               {/* Summary */}
               <div>
-                <h3 className="text-xl font-semibold border-b pb-2 mb-4">Professional Summary</h3>
+                <h3 className="text-xl font-semibold border-b pb-2 mb-4">About</h3>
                 <p>
-                  UX Designer with 5+ years of experience creating digital products that balance business goals with user needs.
-                  Passionate about accessibility and inclusive design. Skilled in research, wireframing, prototyping, and 
-                  usability testing. Strong collaboration skills with cross-functional teams.
+                  A successful Product and UX design leader with 14 years of design experience who thrives in ambiguity - transforming complex systems into intuitive, inclusive, and scalable experiences. Driving AI, accessibility, and enterprise design strategies that simplify workflows and shape human-first digital ecosystems.
                 </p>
               </div>
               
@@ -58,44 +57,52 @@ const Resume = () => {
                 <div className="space-y-8">
                   <div>
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                      <h4 className="font-semibold">Senior UX Designer</h4>
-                      <p className="text-muted-foreground">2021 - Present</p>
+                      <h4 className="font-semibold">Lead UX/Product Designer</h4>
+                      <p className="text-muted-foreground">Oct 2021 - Present</p>
                     </div>
-                    <p className="font-medium mb-2">TechCorp, New York</p>
-                    <ul className="list-disc list-outside ml-5 space-y-1">
-                      <li>Lead UX design for flagship products, resulting in 35% increase in user engagement</li>
-                      <li>Conducted user research and usability testing to inform design decisions</li>
-                      <li>Collaborated with product and engineering teams to ensure design implementation</li>
-                      <li>Created and maintained design system to ensure consistency across products</li>
-                      <li>Mentored junior designers and provided design leadership</li>
+                    <p className="font-medium mb-2">Amazon</p>
+                    <p className="mb-3 text-sm">
+                      Led strategy and design execution across enterprise products serving 1.5M+ users translating complexity into clarity, influencing impact on a global scale. Delivered intuitive, inclusive, and scalable solutions that improved productivity and accessibility across Amazon operations.
+                    </p>
+                    <ul className="list-disc list-outside ml-5 space-y-1 text-sm">
+                      <li>Designed and launched 10+ major technology products and workflows across Amazon services delivering measurable impact on efficiency, accessibility, and customer satisfaction</li>
+                      <li>Scaled self-service product adoption across 55 countries (87% in the first month), reduced manual dependency by thousands of tickets monthly</li>
+                      <li>Led AI & Accessibility innovation, an AI-powered solution to help People with Disabilities (PWDs), and GenAI document extraction and analysis solutions that reduced decision times by 30%</li>
+                      <li>Conducted user research and usability testing with diverse user populations to inform design decisions, ensuring global inclusivity</li>
                     </ul>
                   </div>
                   
                   <div>
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                      <h4 className="font-semibold">UX Designer</h4>
-                      <p className="text-muted-foreground">2018 - 2021</p>
+                      <h4 className="font-semibold">User Experience Specialist</h4>
+                      <p className="text-muted-foreground">May 2019 - Oct 2021</p>
                     </div>
-                    <p className="font-medium mb-2">Design Studio X, San Francisco</p>
-                    <ul className="list-disc list-outside ml-5 space-y-1">
-                      <li>Designed user interfaces for clients across finance, healthcare, and e-commerce</li>
-                      <li>Created wireframes, prototypes, and high-fidelity designs using Figma and Sketch</li>
-                      <li>Conducted competitive analysis and user research to inform design strategies</li>
-                      <li>Collaborated with cross-functional teams to deliver successful projects</li>
-                    </ul>
+                    <p className="font-medium mb-2">UserWorks</p>
+                    <p className="mb-3 text-sm">
+                      Delivered research-driven UX consulting across healthcare, education, and enterprise systems - conducting user research, usability and accessibility evaluations. Influenced data-informed design decisions that improved USPS.com 2.3B+ user sessions/year.
+                    </p>
                   </div>
                   
                   <div>
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                      <h4 className="font-semibold">UI/UX Intern</h4>
-                      <p className="text-muted-foreground">2017 - 2018</p>
+                      <h4 className="font-semibold">UX Consultant & Product Designer</h4>
+                      <p className="text-muted-foreground">Mar 2016 - Jan 2018</p>
                     </div>
-                    <p className="font-medium mb-2">StartUp Inc., Boston</p>
-                    <ul className="list-disc list-outside ml-5 space-y-1">
-                      <li>Assisted senior designers in creating wireframes and prototypes</li>
-                      <li>Participated in usability testing and incorporated feedback into designs</li>
-                      <li>Contributed to design team meetings and brainstorming sessions</li>
-                    </ul>
+                    <p className="font-medium mb-2">Deloitte</p>
+                    <p className="mb-3 text-sm">
+                      Led end-to-end product design for Standard Chartered Bank's "Straight2Bank" platform - that improved transaction efficiency, aligned roadmap strategy, and unlocked 4,000+ hours of productivity.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <div className="flex flex-col md:flex-row justify-between mb-2">
+                      <h4 className="font-semibold">UX Consultant & Product Designer</h4>
+                      <p className="text-muted-foreground">Aug 2011 - Mar 2016</p>
+                    </div>
+                    <p className="font-medium mb-2">Infosys</p>
+                    <p className="mb-3 text-sm">
+                      Led product design for NetBenefits at Fidelity - improving customer engagement by 35% and elevated design consistency across products.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -106,18 +113,10 @@ const Resume = () => {
                 <div className="space-y-4">
                   <div>
                     <div className="flex flex-col md:flex-row justify-between">
-                      <h4 className="font-semibold">Master's in Human-Computer Interaction</h4>
-                      <p className="text-muted-foreground">2015 - 2017</p>
+                      <h4 className="font-semibold">M.S. Human-Computer Interaction</h4>
+                      <p className="text-muted-foreground">2018 - 2019</p>
                     </div>
-                    <p>University of Design</p>
-                  </div>
-                  
-                  <div>
-                    <div className="flex flex-col md:flex-row justify-between">
-                      <h4 className="font-semibold">Bachelor's in Graphic Design</h4>
-                      <p className="text-muted-foreground">2011 - 2015</p>
-                    </div>
-                    <p>Creative Arts University</p>
+                    <p>University of Maryland, Baltimore County (UMBC)</p>
                   </div>
                 </div>
               </div>
@@ -125,38 +124,25 @@ const Resume = () => {
               {/* Skills */}
               <div>
                 <h3 className="text-xl font-semibold border-b pb-2 mb-6">Skills</h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-medium">Design</h4>
-                    <ul className="mt-2 text-sm space-y-1">
-                      <li>User Research</li>
-                      <li>Wireframing</li>
-                      <li>Prototyping</li>
-                      <li>Visual Design</li>
-                      <li>Interaction Design</li>
-                    </ul>
+                    <h4 className="font-medium mb-2">Design</h4>
+                    <p className="text-sm">Product Design, Interaction Design, Visual Design, Accessible Design</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-medium">Tools</h4>
-                    <ul className="mt-2 text-sm space-y-1">
-                      <li>Figma</li>
-                      <li>Adobe XD</li>
-                      <li>Sketch</li>
-                      <li>InVision</li>
-                      <li>Miro</li>
-                    </ul>
+                    <h4 className="font-medium mb-2">User Experience</h4>
+                    <p className="text-sm">Prototyping, Journey Mapping, Storyboarding, Information Architecture</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-medium">Other</h4>
-                    <ul className="mt-2 text-sm space-y-1">
-                      <li>HTML/CSS</li>
-                      <li>Design Systems</li>
-                      <li>Accessibility</li>
-                      <li>Usability Testing</li>
-                      <li>A/B Testing</li>
-                    </ul>
+                    <h4 className="font-medium mb-2">User Research</h4>
+                    <p className="text-sm">User Interviews, Usability Testing, Surveys, A/B Testing, Data Synthesis & Analysis</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-medium mb-2">Tools</h4>
+                    <p className="text-sm">Figma, Adobe Suite, AI design products</p>
                   </div>
                 </div>
               </div>
