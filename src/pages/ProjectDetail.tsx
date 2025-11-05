@@ -1,10 +1,13 @@
-
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 // Project data from manuxer.com
 const projects = [
@@ -210,12 +213,38 @@ const projects = [
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const projectId = parseInt(id || "1");
+  const { toast } = useToast();
   
   // Find the current project
   const project = projects.find(p => p.id === projectId) || projects[0];
   
   // Calculate next project ID
   const nextProjectId = projectId < projects.length ? projectId + 1 : 1;
+  
+  // Password modal state
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [selectedSubProject, setSelectedSubProject] = useState<any>(null);
+  
+  const handlePasswordSubmit = () => {
+    if (passwordInput === "manuxer@2025") {
+      setIsPasswordModalOpen(false);
+      setPasswordInput("");
+      // Open in new tab - for now just show success message
+      toast({
+        title: "Access Granted",
+        description: "This will open the project in a new page.",
+      });
+      window.open("#", "_blank");
+    } else {
+      toast({
+        title: "Access Denied",
+        description: "Incorrect password. Please try again.",
+        variant: "destructive",
+      });
+      setPasswordInput("");
+    }
+  };
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -310,15 +339,13 @@ const ProjectDetail = () => {
                     <h3 className="text-2xl font-semibold mb-6">Related Projects</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {project.subProjects.map((subProject: any, index: number) => (
-                        <a
+                        <div
                           key={index}
-                          href={subProject.isPasswordProtected ? "#" : undefined}
-                          target={subProject.isPasswordProtected ? "_blank" : undefined}
-                          rel={subProject.isPasswordProtected ? "noopener noreferrer" : undefined}
                           onClick={(e) => {
                             if (subProject.isPasswordProtected) {
                               e.preventDefault();
-                              alert("This project is password protected. Please contact for access.");
+                              setSelectedSubProject(subProject);
+                              setIsPasswordModalOpen(true);
                             }
                           }}
                           className="border rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer"
@@ -335,7 +362,7 @@ const ProjectDetail = () => {
                               <p className="text-xs text-primary mt-2">🔒 Password Protected</p>
                             )}
                           </div>
-                        </a>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -412,6 +439,42 @@ const ProjectDetail = () => {
       </main>
       
       <Footer />
+      
+      {/* Password Modal */}
+      <Dialog open={isPasswordModalOpen} onOpenChange={setIsPasswordModalOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Protected Project</DialogTitle>
+            <DialogDescription>
+              This project is password protected. Please enter the password to access.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 py-4">
+            <Input
+              type="password"
+              placeholder="Enter password"
+              value={passwordInput}
+              onChange={(e) => setPasswordInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  handlePasswordSubmit();
+                }
+              }}
+            />
+            <div className="flex justify-end gap-2">
+              <Button variant="outline" onClick={() => {
+                setIsPasswordModalOpen(false);
+                setPasswordInput("");
+              }}>
+                Cancel
+              </Button>
+              <Button onClick={handlePasswordSubmit}>
+                Submit
+              </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
