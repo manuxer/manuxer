@@ -14,7 +14,7 @@ const projects = [
     category: "UX | Product design | Research",
     client: "Amazon",
     duration: "Ongoing",
-    year: "2020 - Present",
+    year: "2021 - Present",
     role: "Product, User experience, Interaction designer",
     description: "User experience design and product strategy of enterprise products impacting over 1.5M users at Amazon.",
     challenge: "Designing enterprise products for a massive scale while maintaining usability and meeting the diverse needs of over 1.6 million users across various roles and workflows.",
@@ -22,7 +22,33 @@ const projects = [
     outcome: "Successfully delivered user experience design for enterprise products serving 1.6M+ users, improving productivity and user satisfaction across Amazon's internal tools.",
     imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
     processImages: [],
-    isNDA: true
+    isNDA: true,
+    subProjects: [
+      {
+        title: "Project Ingress 1",
+        description: "Password protected project",
+        imageUrl: "/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png",
+        isPasswordProtected: true
+      },
+      {
+        title: "Project Ingress 2",
+        description: "Password protected project",
+        imageUrl: "/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png",
+        isPasswordProtected: true
+      },
+      {
+        title: "Project Ingress 3",
+        description: "Password protected project",
+        imageUrl: "/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png",
+        isPasswordProtected: true
+      },
+      {
+        title: "Project Ingress 4",
+        description: "Password protected project",
+        imageUrl: "/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png",
+        isPasswordProtected: true
+      }
+    ]
   },
   {
     id: 2,
@@ -154,13 +180,10 @@ const projects = [
     category: "Artwork / Paintings",
     client: "Personal Collection",
     duration: "Ongoing",
-    year: "2015 - Present",
+    year: "2001 - Present",
     role: "Artist",
     description: "An artist is a simplifier.. Art is the elimination of the unnecessary!",
     overview: "A personal collection of artwork and paintings exploring various styles, mediums, and artistic expressions. This collection represents the creative foundation that informs my design work.",
-    challenge: "Expressing complex emotions and ideas through visual art while maintaining simplicity and clarity. Balancing artistic expression with intentional communication.",
-    solution: "Created diverse artwork ranging from abstract to representational pieces, experimenting with different techniques and mediums. Applied the principle that 'art is the elimination of the unnecessary' to focus on essential elements that convey meaning.",
-    outcome: "Developed a comprehensive art portfolio that demonstrates visual thinking, composition skills, and creative problem-solving abilities that translate directly into design work.",
     imageUrl: "https://manuxer.com/files/MyPaintings/1.jpg",
     processImages: [
       "https://manuxer.com/files/MyPaintings/1.jpg",
@@ -236,8 +259,12 @@ const ProjectDetail = () => {
                   </div>
                 ) : (
                   <>
-                    <h3 className="text-2xl font-semibold mb-4">The Challenge</h3>
-                    <p className="mb-6">{project.challenge}</p>
+                    {project.challenge && (
+                      <>
+                        <h3 className="text-2xl font-semibold mb-4">The Challenge</h3>
+                        <p className="mb-6">{project.challenge}</p>
+                      </>
+                    )}
                     
                     {project.methodology && (
                       <>
@@ -261,11 +288,19 @@ const ProjectDetail = () => {
                       </>
                     )}
                     
-                    <h3 className="text-2xl font-semibold mb-4">The Solution</h3>
-                    <p className="mb-6">{project.solution}</p>
+                    {project.solution && (
+                      <>
+                        <h3 className="text-2xl font-semibold mb-4">The Solution</h3>
+                        <p className="mb-6">{project.solution}</p>
+                      </>
+                    )}
                     
-                    <h3 className="text-2xl font-semibold mb-4">Outcome</h3>
-                    <p className="mb-10">{project.outcome}</p>
+                    {project.outcome && (
+                      <>
+                        <h3 className="text-2xl font-semibold mb-4">Outcome</h3>
+                        <p className="mb-10">{project.outcome}</p>
+                      </>
+                    )}
                   </>
                 )}
                 
@@ -275,7 +310,19 @@ const ProjectDetail = () => {
                     <h3 className="text-2xl font-semibold mb-6">Related Projects</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {project.subProjects.map((subProject: any, index: number) => (
-                        <div key={index} className="border rounded-lg overflow-hidden">
+                        <a
+                          key={index}
+                          href={subProject.isPasswordProtected ? "#" : undefined}
+                          target={subProject.isPasswordProtected ? "_blank" : undefined}
+                          rel={subProject.isPasswordProtected ? "noopener noreferrer" : undefined}
+                          onClick={(e) => {
+                            if (subProject.isPasswordProtected) {
+                              e.preventDefault();
+                              alert("This project is password protected. Please contact for access.");
+                            }
+                          }}
+                          className="border rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer"
+                        >
                           <img 
                             src={subProject.imageUrl} 
                             alt={subProject.title}
@@ -284,8 +331,11 @@ const ProjectDetail = () => {
                           <div className="p-4">
                             <h4 className="font-semibold mb-2">{subProject.title}</h4>
                             <p className="text-sm text-muted-foreground">{subProject.description}</p>
+                            {subProject.isPasswordProtected && (
+                              <p className="text-xs text-primary mt-2">🔒 Password Protected</p>
+                            )}
                           </div>
-                        </div>
+                        </a>
                       ))}
                     </div>
                   </div>
