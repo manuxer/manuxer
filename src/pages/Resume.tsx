@@ -16,7 +16,7 @@ const Resume = () => {
           <div className="container-custom text-center">
             <h1 className="mb-6">Resume</h1>
             <p className="text-xl max-w-2xl mx-auto text-muted-foreground mb-8">
-              My professional background, experience, and skills in building human-first products
+              My professional background, experience in building 0-1 human-first products
             </p>
             <Button asChild size="lg">
               <a href="/Manu_Resume.pdf" download>
@@ -39,7 +39,7 @@ const Resume = () => {
                 </div>
                 <div className="mt-4 md:mt-0 text-right">
                   <p>manuxdesign@gmail.com</p>
-                  <p>Based in DMV</p>
+                  <p><a href="https://www.linkedin.com/in/manu-peethambar/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground/80 transition-colors">LinkedIn</a></p>
                 </div>
               </div>
               
@@ -145,16 +145,6 @@ const Resume = () => {
                     <p className="text-sm">Figma, Adobe Suite, AI design products</p>
                   </div>
                 </div>
-              </div>
-              
-              {/* Certifications */}
-              <div>
-                <h3 className="text-xl font-semibold border-b pb-2 mb-6">Certifications</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2">
-                  <li>Google UX Design Professional Certificate</li>
-                  <li>Nielsen Norman Group UX Certification</li>
-                  <li>Interaction Design Foundation UX Master Certification</li>
-                </ul>
               </div>
               
               {/* References */}

@@ -27,8 +27,14 @@ const About = () => {
                 <p className="mb-4">
                   As an <strong>artist at heart</strong>, I developed strong visual literacy: the ability to understand how color, form, and aesthetics shape meaning and emotion. This artistic foundation, paired with my empathy for people, drives me to create experiences that are not only functional but deeply human.
                 </p>
-                <p className="mb-8">
+                <p className="mb-4">
                   With <strong>14+ years of experience</strong> across tech, consulting, and agency environments, I've learned to thrive in ambiguity - transforming undefined, complex systems into intuitive, inclusive, and scalable experiences that simplify workflows and empower millions of users worldwide. My process is grounded in curiosity, collaboration, and a user-centric mindset that ensures every solution has real impact.
+                </p>
+                <p className="mb-4">
+                  Outside of work, you'll find me on the basketball court, with a paintbrush in hand, or experimenting in the kitchen - constantly exploring new ways to create, connect, and bring ideas to life.
+                </p>
+                <p className="mb-8">
+                  I'm excited to continue <strong>designing experiences that shape the future of AI and human-centered technology</strong>, making life simpler, smarter, and more meaningful for people everywhere.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild>
@@ -61,15 +67,8 @@ const About = () => {
               
               <div className="space-y-12">
                 <div>
-                  <h3 className="text-xl font-medium mb-4">My Approach</h3>
-                  <p className="mb-4">
-                    Outside of work, you'll find me on the basketball court, with a paintbrush in hand, or experimenting in the kitchen - constantly exploring new ways to create, connect, and bring ideas to life.
-                  </p>
-                  <p className="mb-4">
-                    I'm excited to continue <strong>designing experiences that shape the future of AI and human-centered technology</strong>, making life simpler, smarter, and more meaningful for people everywhere.
-                  </p>
                   <p className="italic">
-                    "A simple design isn't just an obvious solution - it's one that solves the problem while leaving room for elegance and emotional connection."
+                    "A simple design isn't just an obvious solution - it's one that solves the problem while leaving room for elegance and emotional connection." - manuxer
                   </p>
                 </div>
                 

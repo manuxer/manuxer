@@ -8,17 +8,14 @@ const Footer = () => {
     <footer className="border-t py-12 mt-24">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0 flex items-center gap-2">
+          <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start gap-2">
             <img 
               src="/lovable-uploads/dc5f6271-b4ae-4ce0-b1fe-3878571be0f1.png" 
               alt="Manuxer Logo" 
               className="h-6 w-auto"
             />
-            <Link to="/" className="text-lg font-medium font-mono hover:opacity-80 transition-opacity">
-              Manu
-            </Link>
-            <p className="mt-1 text-sm text-muted-foreground">
-              UX Designer based in DMV
+            <p className="text-sm text-muted-foreground">
+              Product designer based in DMV
             </p>
           </div>
           
