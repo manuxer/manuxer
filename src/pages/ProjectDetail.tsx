@@ -207,6 +207,20 @@ const projects = [
       "https://manuxer.com/files/MyPaintings/16.png",
       "https://manuxer.com/files/MyPaintings/17.png"
     ]
+  },
+  {
+    id: 7,
+    title: "Accommodations Intake Redesign",
+    category: "UX | Product Design | Research",
+    client: "Amazon",
+    duration: "6 months",
+    year: "2024",
+    role: "Product Designer, UX Researcher",
+    description: "Redesigning the accommodations intake process to improve user experience and efficiency",
+    overview: "A comprehensive redesign of the accommodations intake process to streamline workflows, improve accessibility, and enhance the overall user experience for both employees and administrators.",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    figmaEmbed: "https://embed.figma.com/deck/LhXIPj37x2N7kwbKGY8NTP/Accommodations-intake-redesign--Copy-?node-id=1-536&viewport=-95%2C-20%2C0.46&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share",
+    processImages: []
   }
 ];
 
@@ -284,6 +298,26 @@ const ProjectDetail = () => {
                 
                 <h2 className="text-3xl font-semibold mb-6">Overview</h2>
                 <p className="text-lg mb-6">{project.overview || project.description}</p>
+                
+                {/* Figma Embed for presentations */}
+                {(project as any).figmaEmbed && (
+                  <div className="my-12">
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                      <iframe 
+                        style={{ 
+                          border: '1px solid rgba(0, 0, 0, 0.1)',
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          height: '100%'
+                        }} 
+                        src={(project as any).figmaEmbed}
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                )}
                 
                 {project.isNDA ? (
                   <div className="bg-muted/50 border-l-4 border-primary p-6 rounded-r mb-8">

@@ -48,6 +48,13 @@ const projects = [
     description: "An artist is a simplifier.. Art is the elimination of the unnecessary!",
     imageUrl: "https://manuxer.com/files/MyPaintings/1.jpg",
   },
+  {
+    id: 7,
+    title: "Accommodations Intake Redesign",
+    category: "UX | Product Design | Research",
+    description: "Redesigning the accommodations intake process to improve user experience and efficiency",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+  },
 ];
 
 const Projects = () => {
