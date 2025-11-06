@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -214,6 +214,7 @@ const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const projectId = parseInt(id || "1");
   const { toast } = useToast();
+  const navigate = useNavigate();
   
   // Find the current project
   const project = projects.find(p => p.id === projectId) || projects[0];
@@ -230,12 +231,14 @@ const ProjectDetail = () => {
     if (passwordInput === "manuxer@2025") {
       setIsPasswordModalOpen(false);
       setPasswordInput("");
-      // Open in new tab - for now just show success message
       toast({
         title: "Access Granted",
-        description: "This will open the project in a new page.",
+        description: "Opening project...",
       });
-      window.open("#", "_blank");
+      // Navigate to the subproject page
+      if (selectedSubProject?.id) {
+        navigate(`/projects/${selectedSubProject.id}`);
+      }
     } else {
       toast({
         title: "Access Denied",
