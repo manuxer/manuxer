@@ -7,6 +7,13 @@ import ContactButton from "@/components/ContactButton";
 // Sample project data (same as in Index)
 const projects = [
   {
+    id: 8,
+    title: "Communication on Case Status",
+    category: "UX | Product Design | Research",
+    description: "Improving communication transparency between case managers and employees in the disability leave process",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+  },
+  {
     id: 1,
     title: "User Experience Design | NDA",
     category: "UX | Product design | Research",
