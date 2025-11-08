@@ -7,6 +7,13 @@ import ContactButton from "@/components/ContactButton";
 // Sample project data (same as in Index)
 const projects = [
   {
+    id: 10,
+    title: "Personal Information Management in AtoZ",
+    category: "UX | Product Design | Research",
+    description: "Self-service personal information management system for Amazon's global workforce, improving discoverability and employee autonomy",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+  },
+  {
     id: 9,
     title: "ALICE - Accommodations & Leave Intake Care Expert",
     category: "UX | Product Design | Research | Gen AI",

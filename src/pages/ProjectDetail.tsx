@@ -12,6 +12,104 @@ import { useToast } from "@/hooks/use-toast";
 // Project data from manuxer.com
 const projects = [
   {
+    id: 10,
+    title: "Personal Information Management in AtoZ",
+    category: "UX | Product Design | Research",
+    client: "Amazon - AtoZ Workforce Management",
+    duration: "12 months",
+    year: "2022-2023",
+    role: "UX Designer",
+    description: "Self-service personal information management system for Amazon's global workforce",
+    overview: "Designed a comprehensive self-service personal information management system for Amazon's worldwide workforce of 1.6M+ employees. The project aimed to deprecate a third-party tool (PeopleSoft) and build an in-house HCM tool that provides global employees with the ability to manage their personal information through intuitive self-service capabilities.",
+    challenge: "Employees' personal information management experience was fragmented across different products and modalities that were inconsistent with each other. Discoverability was a major issue, and employees were bound to rely on HR associates to make changes to their personal information. The existing system lacked a unified, accessible interface for managing diverse types of personal data.",
+    solution: "Created a centralized, mobile-first personal information management hub within the AtoZ app. The solution provides employees with one place to manage all their personal information including names, contact details, emergency contacts, addresses, job details, work authorization, and education information. The design emphasizes intuitive information architecture, self-service capabilities, and accessibility across all user segments.",
+    outcome: "Successfully enabled self-service personal information management for 1.6M+ global Amazon employees. Deprecated third-party PeopleSoft tool, moving to in-house HCM solution. Improved discoverability through clear information categorization and reduced dependency on HR associates for routine updates.",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    pdfUrl: "/Port_M_compressed.pdf",
+    research: {
+      methodology: "Foundational research combining historic data analysis, persona development, employee anecdotes, and iterative usability testing",
+      participants: {
+        employees: {
+          count: "Multiple segments",
+          demographics: "Hourly Fulfillment Center workers, Corporate Remote employees, Hourly Middle-Mile Delivery, Corporate In-Person, FC Field managers, Corporate Travellers",
+          methods: ["Persona development and validation", "User interviews and anecdotes collection", "Usability testing sessions", "Feedback analysis from existing systems"]
+        }
+      },
+      keyFindings: [
+        {
+          finding: "Mobile-First Requirement",
+          details: "Employees, especially hourly workers, need easy access to manage personal information from mobile devices, away from service centers.",
+          impact: "Designed mobile-optimized experience as primary interface"
+        },
+        {
+          finding: "One-Stop-Shop Demand",
+          details: "Users wanted a convenient, centralized location for accessing all their personal information instead of navigating multiple systems.",
+          impact: "Created unified personal information hub with clear categorization"
+        },
+        {
+          finding: "Self-Service Expectation",
+          details: "Employees desired easier ways to find, edit, and save personal information without HR assistance.",
+          impact: "Implemented intuitive self-service capabilities for all information types"
+        },
+        {
+          finding: "Discoverability Issues",
+          details: "Users struggled to find where different types of personal information could be updated across fragmented systems.",
+          impact: "Developed clear information architecture with logical categorization"
+        },
+        {
+          finding: "Diverse User Needs",
+          details: "Different employee segments (hourly FC, corporate, field managers) had varying access patterns and technology comfort levels.",
+          impact: "Ensured consistent experience across all user types and devices"
+        }
+      ],
+      insights: [
+        "Personal information management must be accessible from anywhere, not just desks or service centers",
+        "Clear information architecture reduces cognitive load and improves task completion",
+        "Self-service capabilities empower employees and reduce HR administrative burden",
+        "Consistency across mobile and desktop platforms ensures accessibility for all employee types",
+        "Integration with established design systems (Stencil) accelerates adoption and familiarity"
+      ]
+    },
+    keyFeatures: [
+      "Centralized personal information hub with clear categorization",
+      "Self-service editing for names, pronouns, contact information",
+      "Address management (permanent, home, mailing)",
+      "Emergency contacts management",
+      "Job details and supervisor information",
+      "Work authorization and citizenship data",
+      "Education information management",
+      "Mobile-optimized responsive design",
+      "Amazon Stencil Design System integration"
+    ],
+    technologies: ["Amazon Stencil Design System", "Figma", "Mobile-first responsive design", "Accessibility guidelines"],
+    process: [
+      {
+        phase: "Research & Discovery",
+        description: "Analyzed historic research data, employee personas, anecdotes, and legacy user flows to understand pain points and requirements"
+      },
+      {
+        phase: "Strategic Alignment",
+        description: "Worked backwards from user needs while aligning with product goals and technical constraints"
+      },
+      {
+        phase: "Information Architecture",
+        description: "Created comprehensive IA and user flows for intuitive navigation and discoverability"
+      },
+      {
+        phase: "Design & Testing",
+        description: "Designed iteratively with users, incorporated feedback, and gained stakeholder buy-in throughout the process"
+      },
+      {
+        phase: "Design System Integration",
+        description: "Applied Amazon Stencil Design System for consistency, accessibility, and faster development"
+      },
+      {
+        phase: "Build & Refine",
+        description: "Collaborated with engineering to build accessible designs with ongoing user feedback integration"
+      }
+    ]
+  },
+  {
     id: 9,
     title: "ALICE - Accommodations & Leave Intake Care Expert",
     category: "UX | Product Design | Research | Gen AI",
