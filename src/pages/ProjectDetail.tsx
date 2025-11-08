@@ -585,21 +585,40 @@ const ProjectDetail = () => {
                               </ul>
                             </div>
                             
-                            {/* Case Managers */}
-                            <div className="bg-muted/30 p-6 rounded-lg">
-                              <h5 className="font-semibold text-lg mb-3">Case Managers (n={(project as any).research.participants.caseManagers.count})</h5>
-                              <p className="text-sm mb-4 text-muted-foreground">
-                                {(project as any).research.participants.caseManagers.demographics}
-                              </p>
-                              <ul className="space-y-2 text-sm">
-                                {(project as any).research.participants.caseManagers.methods.map((method: string, idx: number) => (
-                                  <li key={idx} className="flex items-start">
-                                    <span className="mr-2">•</span>
-                                    <span>{method}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
+                            {/* Case Managers or Ops Associates */}
+                            {(project as any).research.participants.caseManagers && (
+                              <div className="bg-muted/30 p-6 rounded-lg">
+                                <h5 className="font-semibold text-lg mb-3">Case Managers (n={(project as any).research.participants.caseManagers.count})</h5>
+                                <p className="text-sm mb-4 text-muted-foreground">
+                                  {(project as any).research.participants.caseManagers.demographics}
+                                </p>
+                                <ul className="space-y-2 text-sm">
+                                  {(project as any).research.participants.caseManagers.methods.map((method: string, idx: number) => (
+                                    <li key={idx} className="flex items-start">
+                                      <span className="mr-2">•</span>
+                                      <span>{method}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                            
+                            {(project as any).research.participants.opsAssociates && (
+                              <div className="bg-muted/30 p-6 rounded-lg">
+                                <h5 className="font-semibold text-lg mb-3">Ops Associates (n={(project as any).research.participants.opsAssociates.count})</h5>
+                                <p className="text-sm mb-4 text-muted-foreground">
+                                  {(project as any).research.participants.opsAssociates.demographics}
+                                </p>
+                                <ul className="space-y-2 text-sm">
+                                  {(project as any).research.participants.opsAssociates.methods.map((method: string, idx: number) => (
+                                    <li key={idx} className="flex items-start">
+                                      <span className="mr-2">•</span>
+                                      <span>{method}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
                           </div>
                         </div>
                         
