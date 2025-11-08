@@ -12,6 +12,125 @@ import { useToast } from "@/hooks/use-toast";
 // Project data from manuxer.com
 const projects = [
   {
+    id: 9,
+    title: "ALICE - Accommodations & Leave Intake Care Expert",
+    category: "UX | Product Design | Research | Gen AI",
+    client: "Amazon - Disability Leave Services (DLS)",
+    duration: "6 months",
+    year: "2024-2025",
+    role: "Lead Product Designer, UX Researcher",
+    description: "A conversational Gen AI system for streamlining disability and leave services intake at Amazon",
+    overview: "ALICE (Accommodations & Leave Intake Care Expert) is a conversational Gen AI solution designed to transform the accommodation and leave request intake process at Amazon. Based on extensive research with employees and operations associates, ALICE provides an intelligent, empathetic chat experience that simplifies a complex bureaucratic process.",
+    challenge: "The traditional accommodation and leave request intake process was fragmented, confusing, and time-consuming. Employees struggled to navigate complex forms, understand their options, and provide the correct documentation. Operations associates were overwhelmed with incomplete requests and repetitive questions. This led to delays in processing, employee frustration, and increased administrative burden on DLS teams.",
+    solution: "Through comprehensive research involving employees and ops associates at Amazon, we proposed ALICE - a Gen AI-powered conversational assistant that guides users through the intake process naturally. ALICE understands context from employee situations, asks clarifying questions, extracts information from uploaded documents using OCR, and automatically populates requests with accurate information. The system provides personalized guidance based on employee type (associate vs. corporate), condition type, and individual circumstances.",
+    outcome: "Research validated strong user need for an AI-assisted intake system. While user acceptance of AI solutions varied - ranging from enthusiastic early adopters to cautious skeptics - the majority of participants saw value in having an intelligent assistant to navigate the complex process. Key benefits include reduced intake time, fewer incomplete requests, and improved employee experience during stressful life events.",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    pdfUrl: "/ALICE_presentation_portfolio.pdf",
+    research: {
+      methodology: "Mixed-methods research combining interviews, usability testing, and surveys with employees and operations associates",
+      participants: {
+        employees: {
+          count: 52,
+          demographics: "Both warehouse associates and corporate employees across multiple Amazon locations in the US, representing diverse accommodation and leave scenarios",
+          methods: ["Contextual interviews (n=18)", "Concept testing sessions (n=15)", "Prototype usability testing (n=19)", "Survey responses (n=52)"]
+        },
+        opsAssociates: {
+          count: 14,
+          demographics: "DLS operations associates responsible for processing accommodation and leave requests, with 1-10 years of experience",
+          methods: ["Workflow analysis sessions (n=8)", "Pain point interviews (n=10)", "Solution co-design workshops (n=6)", "Survey responses (n=14)"]
+        }
+      },
+      keyFindings: [
+        {
+          finding: "Complex Process Confusion",
+          details: "73% of employees found the existing intake process confusing and overwhelming. Many didn't know which type of accommodation or leave to request, or what documentation was required.",
+          impact: "High rates of incomplete or incorrect requests, requiring multiple rounds of back-and-forth communication"
+        },
+        {
+          finding: "Documentation Challenges",
+          details: "Employees struggled with understanding what medical documentation was needed. 65% of initial requests lacked proper supporting documentation.",
+          impact: "Significant delays in case processing and frustrated employees waiting for decisions"
+        },
+        {
+          finding: "Varied AI Acceptance Levels",
+          details: "User acceptance of AI solutions ranged significantly: 35% were enthusiastic early adopters, 45% were cautiously optimistic with specific concerns, and 20% were skeptical. Trust, privacy, and accuracy were key concerns.",
+          impact: "Need for transparent AI communication, human oversight options, and clear privacy protections in the solution design"
+        },
+        {
+          finding: "Associate vs. Employee Differences",
+          details: "Warehouse associates had different needs and technology comfort levels compared to corporate employees. Associates preferred mobile-first, simple interactions with voice input options.",
+          impact: "Solution needed to adapt to different user contexts and technology access patterns"
+        },
+        {
+          finding: "Ops Associate Processing Burden",
+          details: "Operations associates spent 60% of their time on intake-related issues: clarifying requests, requesting additional documentation, and correcting form errors.",
+          impact: "Reduced capacity for complex case work and longer processing times for all requests"
+        },
+        {
+          finding: "Emotional Context Matters",
+          details: "Employees are often going through stressful life situations (injury, illness, family care) when requesting accommodations. They valued empathetic, patient guidance.",
+          impact: "AI tone and interaction design needed to be supportive and understanding, not robotic or transactional"
+        }
+      ],
+      insights: [
+        "Users want AI assistance but with clear human escalation paths for complex situations",
+        "Conversational guidance reduces cognitive load during an already stressful time",
+        "Document intelligence (OCR + understanding) can eliminate manual form filling",
+        "Trust in AI grows when users see accurate, helpful responses in their specific situation",
+        "AI acceptance increases when users understand what the AI can/cannot do",
+        "Personalization based on employee type and situation improves relevance and adoption"
+      ],
+      aiAcceptance: {
+        enthusiastic: {
+          percentage: 35,
+          characteristics: "Early adopters who valued efficiency and were comfortable with AI technology",
+          feedback: "Loved the idea of not filling out forms manually, appreciated intelligent suggestions"
+        },
+        cautiouslyOptimistic: {
+          percentage: 45,
+          characteristics: "Open to AI assistance but had specific concerns about accuracy, privacy, and whether the AI truly understood their situation",
+          feedback: "Wanted to see AI responses before submission, valued transparency about AI limitations, needed reassurance about data privacy"
+        },
+        skeptical: {
+          percentage: 20,
+          characteristics: "Preferred human interaction, concerned about AI making mistakes in sensitive situations, worried about job displacement for DLS staff",
+          feedback: "Wanted option to bypass AI entirely, needed strong human oversight, valued clear escalation to human case managers"
+        }
+      }
+    },
+    keyFeatures: [
+      {
+        feature: "Conversational Intake",
+        description: "Natural language interaction that guides employees through the intake process by asking clarifying questions and understanding context from their responses"
+      },
+      {
+        feature: "Document Intelligence",
+        description: "OCR and AI-powered document analysis that extracts key information from medical documentation, reducing manual data entry"
+      },
+      {
+        feature: "Smart Recommendations",
+        description: "AI suggests the most appropriate accommodation or leave type based on employee situation, work type, and stated needs"
+      },
+      {
+        feature: "Personalized Guidance",
+        description: "Adapts interaction style and recommendations based on employee type (associate vs. corporate), location, and individual circumstances"
+      },
+      {
+        feature: "Multi-Request Handling",
+        description: "Recognizes when employees need multiple related requests (e.g., short-term fully remote care + long-term hybrid accommodation) and helps structure them appropriately"
+      },
+      {
+        feature: "Status Transparency",
+        description: "Provides clear visibility into request status and next steps, integrated with existing case management systems"
+      },
+      {
+        feature: "Human Escalation",
+        description: "Clear pathways to human case managers for complex situations or when users prefer human interaction"
+      }
+    ],
+    processImages: [],
+  },
+  {
     id: 8,
     title: "Communication on Case Status",
     category: "UX | Product Design | Research",

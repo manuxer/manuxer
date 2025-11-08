@@ -7,6 +7,13 @@ import ContactButton from "@/components/ContactButton";
 // Sample project data (same as in Index)
 const projects = [
   {
+    id: 9,
+    title: "ALICE - Accommodations & Leave Intake Care Expert",
+    category: "UX | Product Design | Research | Gen AI",
+    description: "A conversational Gen AI system for streamlining disability and leave services intake, based on research with employees and ops associates",
+    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+  },
+  {
     id: 8,
     title: "Communication on Case Status",
     category: "UX | Product Design | Research",
