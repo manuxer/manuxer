@@ -511,14 +511,17 @@ const ProjectDetail = () => {
                           </ul>
                         </div>
                         
-                        {/* PDF Link if available */}
+                        {/* PDF Embed if available */}
                         {(project as any).pdfUrl && (
                           <div className="mt-8">
-                            <Button asChild variant="outline">
-                              <a href={(project as any).pdfUrl} target="_blank" rel="noopener noreferrer">
-                                View Full Presentation (PDF)
-                              </a>
-                            </Button>
+                            <h4 className="text-xl font-semibold mb-4">Full Presentation</h4>
+                            <div className="w-full h-[600px] border rounded-lg overflow-hidden">
+                              <iframe
+                                src={`${(project as any).pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
+                                className="w-full h-full"
+                                title="Project Presentation PDF"
+                              />
+                            </div>
                           </div>
                         )}
                       </div>
