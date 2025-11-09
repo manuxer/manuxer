@@ -753,23 +753,25 @@ const ProjectDetail = () => {
                         {/* PDF Embed if available */}
                         {(project as any).pdfUrl && (
                           <div className="mt-8">
-                            <h4 className="text-xl font-semibold mb-4">Full presentation</h4>
-                            <div 
-                              className="relative w-full h-[600px] border rounded-lg overflow-hidden cursor-pointer group hover:shadow-lg transition-shadow"
-                              onClick={() => setIsPdfModalOpen(true)}
-                            >
+                            <div className="flex items-center justify-between mb-4">
+                              <h4 className="text-xl font-semibold">Full presentation</h4>
+                              <Button 
+                                variant="outline" 
+                                size="sm"
+                                onClick={() => setIsPdfModalOpen(true)}
+                                className="gap-2"
+                              >
+                                <Maximize2 className="w-4 h-4" />
+                                Expand
+                              </Button>
+                            </div>
+                            <div className="w-full h-[600px] border rounded-lg overflow-hidden">
                               <iframe
                                 src={`${(project as any).pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
-                                className="w-full h-full pointer-events-none"
+                                className="w-full h-full"
                                 title="Project Presentation PDF"
                               />
-                              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                                <div className="bg-background/90 rounded-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                                  <Maximize2 className="w-8 h-8" />
-                                </div>
-                              </div>
                             </div>
-                            <p className="text-sm text-muted-foreground mt-2 text-center">Click to view in full screen</p>
                           </div>
                         )}
                       </div>
@@ -936,7 +938,7 @@ const ProjectDetail = () => {
             </div>
             <div className="flex-1 overflow-hidden">
               <iframe
-                src={`${(project as any).pdfUrl}#toolbar=1&navpanes=1`}
+                src={`${(project as any).pdfUrl}#toolbar=0&navpanes=0&scrollbar=1`}
                 className="w-full h-full"
                 title="Project Presentation PDF Full Screen"
               />
