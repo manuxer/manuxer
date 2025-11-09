@@ -801,7 +801,7 @@ const ProjectDetail = () => {
                 )}
                 
                 {/* Process Images */}
-                {project.processImages.length > 0 && (
+                {project.processImages && project.processImages.length > 0 && (
                   <div className="mt-12">
                     <h3 className="text-2xl font-semibold mb-6">
                       {project.category === "Artwork / Paintings" ? "Gallery" : "Design Process"}
