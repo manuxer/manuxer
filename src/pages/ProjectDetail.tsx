@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Maximize2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
@@ -13,7 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 const projects = [
   {
     id: 10,
-    title: "Personal Information Management in AtoZ",
+    title: "Personal information management in AtoZ",
     category: "UX | Product Design | Research",
     client: "Amazon - AtoZ Workforce Management",
     duration: "12 months",
@@ -111,7 +111,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "ALICE - Accommodations & Leave Intake Care Expert",
+    title: "ALICE - Accommodations & leave intake care expert",
     category: "UX | Product Design | Research | Gen AI",
     client: "Amazon - Disability Leave Services (DLS)",
     duration: "6 months",
@@ -230,7 +230,7 @@ const projects = [
   },
   {
     id: 8,
-    title: "Communication on Case Status",
+    title: "Communication on case status",
     category: "UX | Product Design | Research",
     client: "Amazon - Disability Leave Services (DLS)",
     duration: "8 months",
@@ -296,7 +296,7 @@ const projects = [
   },
   {
     id: 1,
-    title: "User Experience Design | NDA",
+    title: "User experience design | NDA",
     category: "UX | Product design | Research",
     client: "Amazon",
     duration: "Ongoing",
@@ -338,7 +338,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Usability Evaluation and Interaction Design",
+    title: "Usability evaluation and interaction design",
     category: "UX | Research",
     client: "USPS",
     duration: "Multiple projects",
@@ -372,7 +372,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Accessibility Evaluation and Inclusive Design",
+    title: "Accessibility evaluation and inclusive design",
     category: "Accessibility",
     client: "MBTA",
     duration: "3 months",
@@ -407,7 +407,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "My Experiments",
+    title: "My experiments",
     category: "UI/UX",
     client: "Personal Projects",
     duration: "Ongoing",
@@ -430,7 +430,7 @@ const projects = [
   },
   {
     id: 5,
-    title: "Usability Engineering",
+    title: "Usability engineering",
     category: "UX Specialist",
     client: "University of Washington",
     duration: "Academic project",
@@ -462,7 +462,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "My Artwork",
+    title: "My artwork",
     category: "Artwork / Paintings",
     client: "Personal Collection",
     duration: "Ongoing",
@@ -493,7 +493,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "Accommodations Intake Redesign",
+    title: "Accommodations intake redesign",
     category: "UX | Product Design | Research",
     client: "Amazon",
     duration: "6 months",
@@ -523,6 +523,9 @@ const ProjectDetail = () => {
   const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
   const [passwordInput, setPasswordInput] = useState("");
   const [selectedSubProject, setSelectedSubProject] = useState<any>(null);
+  
+  // PDF modal state
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
   
   const handlePasswordSubmit = () => {
     if (passwordInput === "manuxer@2025") {
@@ -610,7 +613,7 @@ const ProjectDetail = () => {
                   <>
                     {project.challenge && (
                       <>
-                        <h3 className="text-2xl font-semibold mb-4">The Challenge</h3>
+                        <h3 className="text-2xl font-semibold mb-4">The challenge</h3>
                         <p className="mb-6">{project.challenge}</p>
                       </>
                     )}
@@ -639,7 +642,7 @@ const ProjectDetail = () => {
                     
                     {project.solution && (
                       <>
-                        <h3 className="text-2xl font-semibold mb-4">The Solution</h3>
+                        <h3 className="text-2xl font-semibold mb-4">The solution</h3>
                         <p className="mb-6">{project.solution}</p>
                       </>
                     )}
@@ -664,7 +667,7 @@ const ProjectDetail = () => {
                         
                         {/* Participants */}
                         <div className="mb-8">
-                          <h4 className="text-xl font-semibold mb-4">Research Participants</h4>
+                          <h4 className="text-xl font-semibold mb-4">Research participants</h4>
                           
                           <div className="grid md:grid-cols-2 gap-6">
                             {/* Employees */}
@@ -686,7 +689,7 @@ const ProjectDetail = () => {
                             {/* Case Managers or Ops Associates */}
                             {(project as any).research.participants.caseManagers && (
                               <div className="bg-muted/30 p-6 rounded-lg">
-                                <h5 className="font-semibold text-lg mb-3">Case Managers (n={(project as any).research.participants.caseManagers.count})</h5>
+                                <h5 className="font-semibold text-lg mb-3">Case managers (n={(project as any).research.participants.caseManagers.count})</h5>
                                 <p className="text-sm mb-4 text-muted-foreground">
                                   {(project as any).research.participants.caseManagers.demographics}
                                 </p>
@@ -703,7 +706,7 @@ const ProjectDetail = () => {
                             
                             {(project as any).research.participants.opsAssociates && (
                               <div className="bg-muted/30 p-6 rounded-lg">
-                                <h5 className="font-semibold text-lg mb-3">Ops Associates (n={(project as any).research.participants.opsAssociates.count})</h5>
+                                <h5 className="font-semibold text-lg mb-3">Ops associates (n={(project as any).research.participants.opsAssociates.count})</h5>
                                 <p className="text-sm mb-4 text-muted-foreground">
                                   {(project as any).research.participants.opsAssociates.demographics}
                                 </p>
@@ -722,7 +725,7 @@ const ProjectDetail = () => {
                         
                         {/* Key Findings */}
                         <div className="mb-8">
-                          <h4 className="text-xl font-semibold mb-4">Key Findings</h4>
+                          <h4 className="text-xl font-semibold mb-4">Key findings</h4>
                           <div className="space-y-6">
                             {(project as any).research.keyFindings.map((finding: any, idx: number) => (
                               <div key={idx} className="border-l-4 border-primary/30 pl-6 py-2">
@@ -736,7 +739,7 @@ const ProjectDetail = () => {
                         
                         {/* Insights */}
                         <div className="mb-8">
-                          <h4 className="text-xl font-semibold mb-4">Research Insights</h4>
+                          <h4 className="text-xl font-semibold mb-4">Research insights</h4>
                           <ul className="space-y-3">
                             {(project as any).research.insights.map((insight: string, idx: number) => (
                               <li key={idx} className="flex items-start bg-primary/5 p-4 rounded-lg">
@@ -750,14 +753,23 @@ const ProjectDetail = () => {
                         {/* PDF Embed if available */}
                         {(project as any).pdfUrl && (
                           <div className="mt-8">
-                            <h4 className="text-xl font-semibold mb-4">Full Presentation</h4>
-                            <div className="w-full h-[600px] border rounded-lg overflow-hidden">
+                            <h4 className="text-xl font-semibold mb-4">Full presentation</h4>
+                            <div 
+                              className="relative w-full h-[600px] border rounded-lg overflow-hidden cursor-pointer group hover:shadow-lg transition-shadow"
+                              onClick={() => setIsPdfModalOpen(true)}
+                            >
                               <iframe
                                 src={`${(project as any).pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
-                                className="w-full h-full"
+                                className="w-full h-full pointer-events-none"
                                 title="Project Presentation PDF"
                               />
+                              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                                <div className="bg-background/90 rounded-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                                  <Maximize2 className="w-8 h-8" />
+                                </div>
+                              </div>
                             </div>
+                            <p className="text-sm text-muted-foreground mt-2 text-center">Click to view in full screen</p>
                           </div>
                         )}
                       </div>
@@ -768,7 +780,7 @@ const ProjectDetail = () => {
                 {/* Sub Projects */}
                 {project.subProjects && project.subProjects.length > 0 && (
                   <div className="mt-12 mb-12">
-                    <h3 className="text-2xl font-semibold mb-6">Related Projects</h3>
+                    <h3 className="text-2xl font-semibold mb-6">Related projects</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {project.subProjects.map((subProject: any, index: number) => (
                         <div
@@ -804,7 +816,7 @@ const ProjectDetail = () => {
                 {project.processImages && project.processImages.length > 0 && (
                   <div className="mt-12">
                     <h3 className="text-2xl font-semibold mb-6">
-                      {project.category === "Artwork / Paintings" ? "Gallery" : "Design Process"}
+                      {project.category === "Artwork / Paintings" ? "Gallery" : "Design process"}
                     </h3>
                     <div className={`grid gap-4 ${
                       project.category === "Artwork / Paintings" 
@@ -827,7 +839,7 @@ const ProjectDetail = () => {
               
               <div className="md:w-1/3">
                 <div className="bg-muted rounded-lg p-6 sticky top-24">
-                  <h3 className="text-lg font-medium mb-4">Project Details</h3>
+                  <h3 className="text-lg font-medium mb-4">Project details</h3>
                   <dl className="space-y-4">
                     <div>
                       <dt className="text-sm text-muted-foreground">Company</dt>
@@ -842,7 +854,7 @@ const ProjectDetail = () => {
                       <dd className="font-medium">{project.duration}</dd>
                     </div>
                     <div>
-                      <dt className="text-sm text-muted-foreground">My Role</dt>
+                      <dt className="text-sm text-muted-foreground">My role</dt>
                       <dd className="font-medium">{project.role}</dd>
                     </div>
                   </dl>
@@ -855,7 +867,7 @@ const ProjectDetail = () => {
         {/* Next Project */}
         <section className="py-16 bg-muted/30">
           <div className="container-custom text-center">
-            <p className="text-sm text-muted-foreground mb-4">Next Project</p>
+            <p className="text-sm text-muted-foreground mb-4">Next project</p>
             <h3 className="text-2xl font-medium mb-6">
               {projects.find(p => p.id === nextProjectId)?.title}
             </h3>
@@ -876,7 +888,7 @@ const ProjectDetail = () => {
       <Dialog open={isPasswordModalOpen} onOpenChange={setIsPasswordModalOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Protected Project</DialogTitle>
+            <DialogTitle>Protected project</DialogTitle>
             <DialogDescription>
               This project is password protected. Please enter the password to access.
             </DialogDescription>
@@ -903,6 +915,31 @@ const ProjectDetail = () => {
               <Button onClick={handlePasswordSubmit}>
                 Submit
               </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+      
+      {/* PDF Full Screen Modal */}
+      <Dialog open={isPdfModalOpen} onOpenChange={setIsPdfModalOpen}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] w-full h-full p-0">
+          <div className="w-full h-full flex flex-col">
+            <div className="flex items-center justify-between p-4 border-b">
+              <DialogTitle className="text-lg font-semibold">Full presentation</DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setIsPdfModalOpen(false)}
+              >
+                Close
+              </Button>
+            </div>
+            <div className="flex-1 overflow-hidden">
+              <iframe
+                src={`${(project as any).pdfUrl}#toolbar=1&navpanes=1`}
+                className="w-full h-full"
+                title="Project Presentation PDF Full Screen"
+              />
             </div>
           </div>
         </DialogContent>

@@ -17,7 +17,7 @@ const About = () => {
           <div className="container-custom">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/2 order-2 md:order-1">
-                <h1 className="mb-6">About Me</h1>
+                <h1 className="mb-6">About me</h1>
                 <p className="text-xl mb-4">
                   Hi, I am Manu
                 </p>
@@ -38,7 +38,7 @@ const About = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild>
-                    <Link to="/projects">View My Work</Link>
+                    <Link to="/projects">View my work</Link>
                   </Button>
                   <Button asChild variant="outline">
                     <Link to="/resume">
@@ -59,102 +59,16 @@ const About = () => {
           </div>
         </section>
         
-        {/* Background */}
-        <section className="py-16 md:py-24">
+        {/* Quote Section */}
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className="container-custom">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="mb-8 text-center">My Background</h2>
-              
-              <div className="space-y-12">
-                <div>
-                  <p className="italic">
-                    "A simple design isn't just an obvious solution - it's one that solves the problem while leaving room for elegance and emotional connection." - manuxer
-                  </p>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-medium mb-4">Experience</h3>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-medium">User Experience Designer</h4>
-                      <p className="text-sm text-muted-foreground mb-2">Amazon | Oct 2021 - Present</p>
-                      <ul className="list-disc list-inside space-y-1 text-sm">
-                        <li>Lead and designed employee experience products</li>
-                        <li>Part of a multi-disciplinary group responsible for reinventing how millions (1.5M+) navigate and thrive in their working lives at Amazon</li>
-                        <li>User Experience & Interaction Design of products used by over 1.6M customers</li>
-                        <li>Accessibility evaluation and remediation of the products</li>
-                        <li>Delivered diverse inclusive products ranging from employee self-service (AtoZ), self-identification, disability & leave services and other HR & people management applications</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">User Experience Specialist</h4>
-                      <p className="text-sm text-muted-foreground mb-2">UserWorks Inc. | May 2019 - Sept 2021</p>
-                      <ul className="list-disc list-inside space-y-1 text-sm">
-                        <li>User research, Usability engineering, Interaction design, and Accessibility consulting</li>
-                        <li>Help clients improve a product at any stage in the development lifecycle</li>
-                        <li>Research to help understand end user needs</li>
-                        <li>Integrate user experience principles into business or development processes</li>
-                        <li>User Research & Interaction Design of a non-profit organization involving medical colleges</li>
-                        <li>Accessibility - Evaluation and remediation of both internal and public facing applications for State of Massachusetts</li>
-                        <li>Usability Evaluation & Interaction design of the USPS® website</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">UI/UX Consultant</h4>
-                      <p className="text-sm text-muted-foreground mb-2">Deloitte | March 2016 - January 2018</p>
-                      <ul className="list-disc list-inside space-y-1 text-sm">
-                        <li>Delivered an end to end transaction banking application reflecting stakeholder needs</li>
-                        <li>Designed and developed responsive and reusable components with Interaction Design guidelines</li>
-                        <li>Created Interaction design mockups of different user journeys</li>
-                        <li>Conducted usability tests to evaluate user journey directions</li>
-                        <li>Collaborated with design team to conduct research and create personas, user flows, wireframes, and site maps</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Senior UI/UX Design Engineer</h4>
-                      <p className="text-sm text-muted-foreground mb-2">Infosys Ltd. | Aug 2011 - March 2016</p>
-                      <ul className="list-disc list-inside space-y-1 text-sm">
-                        <li>Created user stories, personas, sitemaps, storyboards, wireframes, prototypes and final coding</li>
-                        <li>Helped define a design system and advocated its application across different products and platforms</li>
-                        <li>Analyzed and incorporated user testing data and qualitative feedback into designs</li>
-                        <li>Translated goals and data into User-Centered digital experiences</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-medium mb-4">Education</h3>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-medium">M.S. Human-Computer Interaction</h4>
-                      <p className="text-sm text-muted-foreground">University of Maryland, Baltimore County (UMBC) | 2018 - 2019</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-medium mb-4">Skills</h3>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-medium mb-2">Design</h4>
-                      <p className="text-sm">Product Design, Interaction Design, Visual Design, Accessible Design</p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-2">User Experience</h4>
-                      <p className="text-sm">Prototyping, Journey Mapping, Storyboarding, Information Architecture</p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-2">User Research</h4>
-                      <p className="text-sm">User Interviews, Usability Testing, Surveys, A/B Testing, Data Synthesis & Analysis</p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-2">Tools</h4>
-                      <p className="text-sm">Figma, Adobe Suite, AI design products</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="max-w-4xl mx-auto text-center">
+              <blockquote className="text-2xl md:text-3xl font-light italic leading-relaxed text-foreground/90">
+                "A simple design isn't just an obvious solution - it's one that solves the problem while leaving room for elegance and emotional connection."
+                <footer className="mt-6 text-lg font-medium not-italic text-muted-foreground">
+                  — manuxer
+                </footer>
+              </blockquote>
             </div>
           </div>
         </section>

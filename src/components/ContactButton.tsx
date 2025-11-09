@@ -8,7 +8,7 @@ const ContactButton = () => {
       <h3 className="text-2xl font-medium mb-6">Interested in working together?</h3>
       <Button asChild size="lg">
         <a href="mailto:manuxdesign@gmail.com">
-          Let's Talk
+          Let's talk
         </a>
       </Button>
     </div>

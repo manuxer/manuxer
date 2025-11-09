@@ -26,8 +26,8 @@ const ProjectCard = ({ id, title, category, description, imageUrl }: ProjectCard
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <p className="text-muted-foreground line-clamp-2 flex-1">{description}</p>
           <p className="mt-4 text-sm font-medium inline-flex items-center text-primary">
-            View Case Study
-            <svg 
+            View case study
+            <svg
               xmlns="http://www.w3.org/2000/svg" 
               width="16" 
               height="16" 
