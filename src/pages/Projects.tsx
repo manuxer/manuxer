@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import ContactButton from "@/components/ContactButton";
+import commsImage from "@/assets/comms-case-status.png";
 
 // Sample project data (same as in Index)
 const projects = [
@@ -11,13 +12,6 @@ const projects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce, improving discoverability and employee autonomy",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
-  },
-  {
-    id: 7,
-    title: "Accommodations intake redesign",
-    category: "UX | Product design | Research",
-    description: "Redesigning the accommodations intake process to improve user experience and efficiency",
     imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
   },
   {
@@ -32,7 +26,7 @@ const projects = [
     title: "Communication on case status",
     category: "UX | Product design | Research",
     description: "Improving communication transparency between case managers and employees in the disability leave process",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: commsImage,
   },
   {
     id: 2,

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import ContactButton from "@/components/ContactButton";
 import { FileText } from "lucide-react";
+import manuLogoQr from "@/assets/manu-logo-qr.png";
 
 // Sample project data
 const featuredProjects = [
@@ -53,7 +54,7 @@ const Index = () => {
                 Hi, I am Manu
               </h1>
               <p className="text-xl md:text-2xl mb-10 text-muted-foreground">
-                Product, User experience, Interaction designer at Amazon
+                Product design leader at Amazon
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
@@ -105,20 +106,15 @@ const Index = () => {
                 <p className="mb-8 text-lg">
                   I focus on creating inclusive and accessible design solutions through usability engineering, research, and iterative design processes.
                 </p>
-                <div className="space-y-2 text-sm mb-8">
-                  <p>📍 Maryland, USA</p>
-                  <p>📧 <a href="mailto:manuxdesign@gmail.com" className="hover:underline">manuxdesign@gmail.com</a></p>
-                  <p>📱 <a href="tel:240-408-9520" className="hover:underline">(240) 408-9520</a></p>
-                </div>
                 <Button asChild>
                   <Link to="/about">More about me</Link>
                 </Button>
               </div>
-              <div className="bg-muted/30 rounded-lg p-4">
+              <div className="bg-muted/30 rounded-lg p-8 flex items-center justify-center">
                 <img 
-                  src="https://manuxer.com/img/BCard%20copy.png"
-                  alt="manuxer, UX Designer"
-                  className="w-full h-auto rounded"
+                  src={manuLogoQr}
+                  alt="Manu logo and QR code"
+                  className="w-full h-auto max-w-md"
                 />
               </div>
             </div>
