@@ -50,7 +50,7 @@ const About = () => {
               </div>
               <div className="md:w-1/2 order-1 md:order-2">
                 <img 
-                  src="https://manuxer.com/img/profile1.png"
+                  src="https://manupeethambar.github.io/manuxer/img/profile1.png"
                   alt="Manu, UX Designer"
                   className="w-full rounded-lg shadow-lg"
                 />

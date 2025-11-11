@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import ContactButton from "@/components/ContactButton";
 import commsImage from "@/assets/comms-case-status.png";
+import amazonLogo from "@/assets/amazon-phone-logo.png";
 
 // Sample project data (same as in Index)
 const projects = [
@@ -12,14 +13,14 @@ const projects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce, improving discoverability and employee autonomy",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: amazonLogo,
   },
   {
     id: 9,
     title: "ALICE - Accommodations & leave intake care expert",
     category: "UX | Product design | Research | Gen AI",
     description: "A conversational Gen AI system for streamlining disability and leave services intake, based on research with employees and ops associates",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: amazonLogo,
   },
   {
     id: 8,
@@ -33,35 +34,35 @@ const projects = [
     title: "Usability evaluation and interaction design",
     category: "UX | Research",
     description: "Usability analysis and redesign of the Postal Service website",
-    imageUrl: "https://manuxer.com/files/USPS/Logo/USPS_logo.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/Logo/USPS_logo.png",
   },
   {
     id: 3,
     title: "Accessibility evaluation and inclusive design",
     category: "Accessibility",
     description: "Accessibility evaluation and remediation of the MBTA intranet website",
-    imageUrl: "https://manuxer.com/files/MBTA/img/MBTA-hero.jpeg",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/MBTA/img/MBTA-hero.jpeg",
   },
   {
     id: 4,
     title: "My experiments",
     category: "UI/UX",
     description: "A collection of my design experiments",
-    imageUrl: "https://manuxer.com/files/Experiments/VisualSearch.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/Experiments/VisualSearch.png",
   },
   {
     id: 5,
     title: "Usability engineering",
     category: "UX specialist",
     description: "Design - Evaluate - Iterate",
-    imageUrl: "https://manuxer.com/img/UW.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/img/UW.png",
   },
   {
     id: 6,
     title: "My artwork",
     category: "Artwork / Paintings",
     description: "An artist is a simplifier.. Art is the elimination of the unnecessary!",
-    imageUrl: "https://manuxer.com/files/MyPaintings/1.jpg",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/MyPaintings/1.jpg",
   },
 ];
 

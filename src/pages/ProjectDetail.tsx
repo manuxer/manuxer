@@ -24,7 +24,7 @@ const projects = [
     challenge: "Employees' personal information management experience was fragmented across different products and modalities that were inconsistent with each other. Discoverability was a major issue, and employees were bound to rely on HR associates to make changes to their personal information. The existing system lacked a unified, accessible interface for managing diverse types of personal data.",
     solution: "Created a centralized, mobile-first personal information management hub within the AtoZ app. The solution provides employees with one place to manage all their personal information including names, contact details, emergency contacts, addresses, job details, work authorization, and education information. The design emphasizes intuitive information architecture, self-service capabilities, and accessibility across all user segments.",
     outcome: "Successfully enabled self-service personal information management for 1.6M+ global Amazon employees. Deprecated third-party PeopleSoft tool, moving to in-house HCM solution. Improved discoverability through clear information categorization and reduced dependency on HR associates for routine updates.",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: "/src/assets/amazon-phone-logo.png",
     pdfUrl: "/Port_M_compressed.pdf",
     research: {
       methodology: "Foundational research combining historic data analysis, persona development, employee anecdotes, and iterative usability testing",
@@ -122,7 +122,7 @@ const projects = [
     challenge: "The traditional accommodation and leave request intake process was fragmented, confusing, and time-consuming. Employees struggled to navigate complex forms, understand their options, and provide the correct documentation. Operations associates were overwhelmed with incomplete requests and repetitive questions. This led to delays in processing, employee frustration, and increased administrative burden on DLS teams.",
     solution: "Through comprehensive research involving employees and ops associates at Amazon, we proposed ALICE - a Gen AI-powered conversational assistant that guides users through the intake process naturally. ALICE understands context from employee situations, asks clarifying questions, extracts information from uploaded documents using OCR, and automatically populates requests with accurate information. The system provides personalized guidance based on employee type (associate vs. corporate), condition type, and individual circumstances.",
     outcome: "Research validated strong user need for an AI-assisted intake system. While user acceptance of AI solutions varied - ranging from enthusiastic early adopters to cautious skeptics - the majority of participants saw value in having an intelligent assistant to navigate the complex process. Key benefits include reduced intake time, fewer incomplete requests, and improved employee experience during stressful life events.",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: "/src/assets/amazon-phone-logo.png",
     pdfUrl: "/ALICE_presentation_portfolio.pdf",
     research: {
       methodology: "Mixed-methods research combining interviews, usability testing, and surveys with employees and operations associates",
@@ -241,7 +241,7 @@ const projects = [
     challenge: "Employees on disability leave experienced high levels of anxiety and uncertainty due to poor communication about their case status. Case managers were overwhelmed with redundant inquiries, taking time away from actual case processing. The existing system lacked transparency, leading to employee frustration and decreased trust in the DLS process.",
     solution: "Through extensive research with both employees and case managers, we designed a transparent communication system that provides real-time case status updates, automated notifications, and clear next steps. The solution balances employee need for information with case manager workflow efficiency.",
     outcome: "Reduced case status inquiries by 45%, improved employee satisfaction scores by 60%, and decreased case manager administrative workload by 30%. The new system provided employees with proactive updates while allowing case managers to focus on complex case work.",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: "/src/assets/amazon-phone-logo.png",
     pdfUrl: "/DLS_Communication_Case_Status.pdf",
     research: {
       methodology: "Mixed-methods research combining quantitative surveys and qualitative interviews",
@@ -306,7 +306,7 @@ const projects = [
     challenge: "Designing enterprise products for a massive scale while maintaining usability and meeting the diverse needs of over 1.6 million users across various roles and workflows.",
     solution: "Applied user-centered design principles, conducted extensive research, and created scalable design systems that work across multiple product lines. Collaborated with cross-functional teams to ensure design solutions align with business goals and user needs.",
     outcome: "Successfully delivered user experience design for enterprise products serving 1.6M+ users, improving productivity and user satisfaction across Amazon's internal tools.",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: "/src/assets/amazon-phone-logo.png",
     processImages: [],
     isNDA: true,
     subProjects: [
@@ -349,24 +349,24 @@ const projects = [
     challenge: "USPS.com needed continuous improvement to handle increased traffic (especially during COVID), improve customer experience, and reduce burden on Post Office™ locations. The site serves the American public (residential consumers), small and medium businesses, as well as foreign shippers.",
     solution: "Implemented a comprehensive UX strategy including usability testing, heuristic evaluations, and continuous improvement processes. Created Digital Style Guide (DSG) and UX Heuristics to ensure consistent customer experience. Worked with 10 domain-specific teams including Content Strategy, Design, Digital Analytics, and User Experience & UX Design.",
     outcome: "Successfully improved USPS.com's digital experience, helping it handle significant traffic increases during COVID-19. Delivered projects including PO Locator redesign and USPS® Online Postal Store improvements.",
-    imageUrl: "https://manuxer.com/files/USPS/Logo/USPS_logo.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/Logo/USPS_logo.png",
     processImages: [
-      "https://manuxer.com/files/USPS/usps_ux/usps-hero1.png",
-      "https://manuxer.com/files/USPS/usps_ux/cx-at-usps.png",
-      "https://manuxer.com/files/USPS/usps_ux/ux-steps.png",
-      "https://manuxer.com/files/USPS/usps_ux/usps-heuristic.png",
-      "https://manuxer.com/files/USPS/usps_ux/usability-testing.png"
+      "https://manupeethambar.github.io/manuxer/files/USPS/usps_ux/usps-hero1.png",
+      "https://manupeethambar.github.io/manuxer/files/USPS/usps_ux/cx-at-usps.png",
+      "https://manupeethambar.github.io/manuxer/files/USPS/usps_ux/ux-steps.png",
+      "https://manupeethambar.github.io/manuxer/files/USPS/usps_ux/usps-heuristic.png",
+      "https://manupeethambar.github.io/manuxer/files/USPS/usps_ux/usability-testing.png"
     ],
     subProjects: [
       {
         title: "PO Locator - Find USPS® Locations",
         description: "A tool to find USPS Locations on USPS.com (or send directions) and hours of operation.",
-        imageUrl: "https://manuxer.com/files/USPS/PO_Locator/img/po-banner.png"
+        imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/PO_Locator/img/po-banner.png"
       },
       {
         title: "USPS® Online Postal Store",
         description: "Online Postal Store - Order stamps, shipping supplies, and unique items only available from the United States Postal Service.",
-        imageUrl: "https://manuxer.com/files/USPS/usps_ux/usps-store.png"
+        imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/usps_ux/usps-store.png"
       }
     ]
   },
@@ -383,13 +383,13 @@ const projects = [
     challenge: "The accessibility audit identified areas where the system could introduce barriers or cause difficulty for people with disabilities. Testing covered 41 pages and use cases using WCAG 2.1 Level AA as a guide.",
     solution: "Conducted comprehensive accessibility evaluation using multiple assistive technologies including JAWS screen reader, Dragon Naturally Speaking, keyboard-only navigation, and color contrast tools. Tested across Chrome, Internet Explorer, and Firefox browsers. Provided detailed findings and recommendations for remediation.",
     outcome: "Delivered comprehensive accessibility report with severity ratings and actionable recommendations. Identified key issues including missing alt text, keyboard accessibility problems, focus indicators, and WCAG compliance gaps. Provided clear remediation strategies for each finding.",
-    imageUrl: "https://manuxer.com/files/MBTA/img/MBTA-hero.jpeg",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/MBTA/img/MBTA-hero.jpeg",
     processImages: [
-      "https://manuxer.com/files/MBTA/img/MBTA-hero2.jpeg",
-      "https://manuxer.com/files/MBTA/img/wcag2-1.png",
-      "https://manuxer.com/files/MBTA/img/tools.png",
-      "https://manuxer.com/files/MBTA/img/MBTA-main.png",
-      "https://manuxer.com/files/MBTA/img/report.png"
+      "https://manupeethambar.github.io/manuxer/files/MBTA/img/MBTA-hero2.jpeg",
+      "https://manupeethambar.github.io/manuxer/files/MBTA/img/wcag2-1.png",
+      "https://manupeethambar.github.io/manuxer/files/MBTA/img/tools.png",
+      "https://manupeethambar.github.io/manuxer/files/MBTA/img/MBTA-main.png",
+      "https://manupeethambar.github.io/manuxer/files/MBTA/img/report.png"
     ],
     methodology: [
       "Access the intranet system via web browser using user accounts provided by the MBTA team",
@@ -418,14 +418,14 @@ const projects = [
     challenge: "Exploring new design trends, experimenting with different interaction patterns, and pushing creative boundaries while maintaining usability and accessibility standards.",
     solution: "Created diverse design concepts including SwiftPay (payment app), Visual Search interface, Furniture app, CinePass (movie booking), Food ordering app, and e-commerce signup flows. Each experiment focuses on solving specific UX challenges with innovative approaches.",
     outcome: "Built a comprehensive portfolio of design experiments demonstrating versatility across different domains and design challenges. These experiments inform real-world project decisions and showcase design thinking capabilities.",
-    imageUrl: "https://manuxer.com/files/Experiments/VisualSearch.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/Experiments/VisualSearch.png",
     processImages: [
-      "https://manuxer.com/files/Experiments/SwiftPay.png",
-      "https://manuxer.com/files/Experiments/VisualSearch.png",
-      "https://manuxer.com/files/Experiments/Furniture%20app.png",
-      "https://manuxer.com/files/Experiments/cinePass.png",
-      "https://manuxer.com/files/Experiments/Food%20ordering%20app.png",
-      "https://manuxer.com/files/Experiments/e-commerce%20signup.png"
+      "https://manupeethambar.github.io/manuxer/files/Experiments/SwiftPay.png",
+      "https://manupeethambar.github.io/manuxer/files/Experiments/VisualSearch.png",
+      "https://manupeethambar.github.io/manuxer/files/Experiments/Furniture%20app.png",
+      "https://manupeethambar.github.io/manuxer/files/Experiments/cinePass.png",
+      "https://manupeethambar.github.io/manuxer/files/Experiments/Food%20ordering%20app.png",
+      "https://manupeethambar.github.io/manuxer/files/Experiments/e-commerce%20signup.png"
     ]
   },
   {
@@ -441,23 +441,23 @@ const projects = [
     challenge: "Understanding and applying systematic usability engineering processes including user research, iterative design, evaluation methods, and design refinement.",
     solution: "Applied structured usability engineering methodology covering the complete design lifecycle: user research, persona development, task analysis, prototyping, usability testing, and iterative improvements based on findings.",
     outcome: "Developed deep understanding of usability engineering principles and delivered practical design solutions validated through systematic evaluation methods.",
-    imageUrl: "https://manuxer.com/img/UW.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/img/UW.png",
     processImages: [
-      "https://manuxer.com/files/UW/1.png",
-      "https://manuxer.com/files/UW/2.png",
-      "https://manuxer.com/files/UW/3.png",
-      "https://manuxer.com/files/UW/4.png",
-      "https://manuxer.com/files/UW/5.png",
-      "https://manuxer.com/files/UW/6.png",
-      "https://manuxer.com/files/UW/7.png",
-      "https://manuxer.com/files/UW/8.png",
-      "https://manuxer.com/files/UW/9.png",
-      "https://manuxer.com/files/UW/10.png",
-      "https://manuxer.com/files/UW/11.png",
-      "https://manuxer.com/files/UW/12.png",
-      "https://manuxer.com/files/UW/13.png",
-      "https://manuxer.com/files/UW/14.png",
-      "https://manuxer.com/files/UW/15.png"
+      "https://manupeethambar.github.io/manuxer/files/UW/1.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/2.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/3.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/4.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/5.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/6.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/7.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/8.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/9.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/10.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/11.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/12.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/13.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/14.png",
+      "https://manupeethambar.github.io/manuxer/files/UW/15.png"
     ]
   },
   {
@@ -470,25 +470,25 @@ const projects = [
     role: "Artist",
     description: "An artist is a simplifier.. Art is the elimination of the unnecessary!",
     overview: "A personal collection of artwork and paintings exploring various styles, mediums, and artistic expressions. This collection represents the creative foundation that informs my design work.",
-    imageUrl: "https://manuxer.com/files/MyPaintings/1.jpg",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/MyPaintings/1.jpg",
     processImages: [
-      "https://manuxer.com/files/MyPaintings/1.jpg",
-      "https://manuxer.com/files/MyPaintings/2.jpg",
-      "https://manuxer.com/files/MyPaintings/3.jpg",
-      "https://manuxer.com/files/MyPaintings/4.jpg",
-      "https://manuxer.com/files/MyPaintings/5.jpg",
-      "https://manuxer.com/files/MyPaintings/6.jpg",
-      "https://manuxer.com/files/MyPaintings/7.jpg",
-      "https://manuxer.com/files/MyPaintings/8.jpg",
-      "https://manuxer.com/files/MyPaintings/9.jpg",
-      "https://manuxer.com/files/MyPaintings/10.jpg",
-      "https://manuxer.com/files/MyPaintings/11.jpg",
-      "https://manuxer.com/files/MyPaintings/12.jpg",
-      "https://manuxer.com/files/MyPaintings/13.png",
-      "https://manuxer.com/files/MyPaintings/14.png",
-      "https://manuxer.com/files/MyPaintings/15.png",
-      "https://manuxer.com/files/MyPaintings/16.png",
-      "https://manuxer.com/files/MyPaintings/17.png"
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/1.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/2.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/3.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/4.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/5.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/6.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/7.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/8.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/9.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/10.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/11.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/12.jpg",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/13.png",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/14.png",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/15.png",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/16.png",
+      "https://manupeethambar.github.io/manuxer/files/MyPaintings/17.png"
     ]
   },
   {
@@ -501,7 +501,7 @@ const projects = [
     role: "Product Designer, UX Researcher",
     description: "Redesigning the accommodations intake process to improve user experience and efficiency",
     overview: "A comprehensive redesign of the accommodations intake process to streamline workflows, improve accessibility, and enhance the overall user experience for both employees and administrators.",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: "/src/assets/amazon-phone-logo.png",
     figmaEmbed: "https://embed.figma.com/deck/LhXIPj37x2N7kwbKGY8NTP/Accommodations-intake-redesign--Copy-?node-id=1-536&viewport=-95%2C-20%2C0.46&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share",
     processImages: []
   }

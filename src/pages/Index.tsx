@@ -15,28 +15,28 @@ const featuredProjects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce",
-    imageUrl: "https://manuxer.com/files/Amazon/amazon_logo.png",
+    imageUrl: "/src/assets/amazon-phone-logo.png",
   },
   {
     id: 2,
     title: "Usability evaluation and interaction design",
     category: "UX | Research",
     description: "Usability analysis and redesign of the Postal Service website",
-    imageUrl: "https://manuxer.com/files/USPS/Logo/USPS_logo.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/Logo/USPS_logo.png",
   },
   {
     id: 3,
     title: "Accessibility evaluation and inclusive design",
     category: "Accessibility",
     description: "Accessibility evaluation and remediation of the MBTA intranet website",
-    imageUrl: "https://manuxer.com/files/MBTA/img/MBTA-hero.jpeg",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/MBTA/img/MBTA-hero.jpeg",
   },
   {
     id: 4,
     title: "My experiments",
     category: "UI/UX",
     description: "A collection of my design experiments",
-    imageUrl: "https://manuxer.com/files/Experiments/VisualSearch.png",
+    imageUrl: "https://manupeethambar.github.io/manuxer/files/Experiments/VisualSearch.png",
   },
 ];
 
