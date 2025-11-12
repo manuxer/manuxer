@@ -15,7 +15,7 @@ const featuredProjects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce",
-    imageUrl: "/src/assets/amazon-phone-logo.png",
+    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
   },
   {
     id: 2,

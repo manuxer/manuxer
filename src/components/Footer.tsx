@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start gap-2">
             <img 
-              src="/manuxer-logo.png" 
+              src="/manuxer/src/assets/manuxer-logo.png" 
               alt="Manuxer Logo" 
               className="h-6 w-auto"
             />

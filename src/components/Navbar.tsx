@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container-custom h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <img 
-            src="/manuxer-logo.png" 
+            src="/manuxer/src/assets/manuxer-logo.png" 
             alt="Manuxer Logo" 
             className="h-8 w-auto"
           />
