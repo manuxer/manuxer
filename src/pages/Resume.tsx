@@ -19,7 +19,7 @@ const Resume = () => {
               My professional background, experience in building 0-1 human-first products
             </p>
             <Button asChild size="lg">
-              <a href="/Manu_Resume.pdf" download>
+              <a href="/Manu_Resume.pdf" target="_blank">
                 <Download className="mr-2 h-4 w-4" />
                 Download
               </a>

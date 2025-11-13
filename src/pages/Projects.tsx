@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import ContactButton from "@/components/ContactButton";
 import commsImage from "@/assets/comms-case-status.png";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
+import aliceIntro from "@/assets/alice.png";
 
 // Sample project data (same as in Index)
 const projects = [
@@ -20,7 +21,7 @@ const projects = [
     title: "ALICE - Accommodations & leave intake care expert",
     category: "UX | Product design | Research | Gen AI",
     description: "A conversational Gen AI system for streamlining disability and leave services intake, based on research with employees and ops associates",
-    imageUrl: amazonLogo,
+    imageUrl: aliceIntro,
   },
   {
     id: 8,

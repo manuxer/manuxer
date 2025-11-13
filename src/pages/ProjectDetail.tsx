@@ -8,6 +8,8 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import amazonLogo from "@/assets/amazon-phone-logo.png";
+import aliceIntro from "@/assets/alice.png";
 
 // Project data from manuxer.com
 const projects = [
@@ -24,7 +26,7 @@ const projects = [
     challenge: "Employees' personal information management experience was fragmented across different products and modalities that were inconsistent with each other. Discoverability was a major issue, and employees were bound to rely on HR associates to make changes to their personal information. The existing system lacked a unified, accessible interface for managing diverse types of personal data.",
     solution: "Created a centralized, mobile-first personal information management hub within the AtoZ app. The solution provides employees with one place to manage all their personal information including names, contact details, emergency contacts, addresses, job details, work authorization, and education information. The design emphasizes intuitive information architecture, self-service capabilities, and accessibility across all user segments.",
     outcome: "Successfully enabled self-service personal information management for 1.6M+ global Amazon employees. Deprecated third-party PeopleSoft tool, moving to in-house HCM solution. Improved discoverability through clear information categorization and reduced dependency on HR associates for routine updates.",
-    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
+    imageUrl: amazonLogo,
     pdfUrl: "/Port_M_compressed.pdf",
     research: {
       methodology: "Foundational research combining historic data analysis, persona development, employee anecdotes, and iterative usability testing",
@@ -122,7 +124,7 @@ const projects = [
     challenge: "The traditional accommodation and leave request intake process was fragmented, confusing, and time-consuming. Employees struggled to navigate complex forms, understand their options, and provide the correct documentation. Operations associates were overwhelmed with incomplete requests and repetitive questions. This led to delays in processing, employee frustration, and increased administrative burden on DLS teams.",
     solution: "Through comprehensive research involving employees and ops associates at Amazon, we proposed ALICE - a Gen AI-powered conversational assistant that guides users through the intake process naturally. ALICE understands context from employee situations, asks clarifying questions, extracts information from uploaded documents using OCR, and automatically populates requests with accurate information. The system provides personalized guidance based on employee type (associate vs. corporate), condition type, and individual circumstances.",
     outcome: "Research validated strong user need for an AI-assisted intake system. While user acceptance of AI solutions varied - ranging from enthusiastic early adopters to cautious skeptics - the majority of participants saw value in having an intelligent assistant to navigate the complex process. Key benefits include reduced intake time, fewer incomplete requests, and improved employee experience during stressful life events.",
-    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
+    imageUrl: aliceIntro,
     pdfUrl: "/ALICE_presentation_portfolio.pdf",
     research: {
       methodology: "Mixed-methods research combining interviews, usability testing, and surveys with employees and operations associates",
@@ -241,7 +243,7 @@ const projects = [
     challenge: "Employees on disability leave experienced high levels of anxiety and uncertainty due to poor communication about their case status. Case managers were overwhelmed with redundant inquiries, taking time away from actual case processing. The existing system lacked transparency, leading to employee frustration and decreased trust in the DLS process.",
     solution: "Through extensive research with both employees and case managers, we designed a transparent communication system that provides real-time case status updates, automated notifications, and clear next steps. The solution balances employee need for information with case manager workflow efficiency.",
     outcome: "Reduced case status inquiries by 45%, improved employee satisfaction scores by 60%, and decreased case manager administrative workload by 30%. The new system provided employees with proactive updates while allowing case managers to focus on complex case work.",
-    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
+    imageUrl: amazonLogo,
     pdfUrl: "/DLS_Communication_Case_Status.pdf",
     research: {
       methodology: "Mixed-methods research combining quantitative surveys and qualitative interviews",
@@ -306,7 +308,7 @@ const projects = [
     challenge: "Designing enterprise products for a massive scale while maintaining usability and meeting the diverse needs of over 1.6 million users across various roles and workflows.",
     solution: "Applied user-centered design principles, conducted extensive research, and created scalable design systems that work across multiple product lines. Collaborated with cross-functional teams to ensure design solutions align with business goals and user needs.",
     outcome: "Successfully delivered user experience design for enterprise products serving 1.6M+ users, improving productivity and user satisfaction across Amazon's internal tools.",
-    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
+    imageUrl: amazonLogo,
     processImages: [],
     isNDA: true,
     subProjects: [
@@ -501,7 +503,7 @@ const projects = [
     role: "Product Designer, UX Researcher",
     description: "Redesigning the accommodations intake process to improve user experience and efficiency",
     overview: "A comprehensive redesign of the accommodations intake process to streamline workflows, improve accessibility, and enhance the overall user experience for both employees and administrators.",
-    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
+    imageUrl: amazonLogo,
     figmaEmbed: "https://embed.figma.com/deck/LhXIPj37x2N7kwbKGY8NTP/Accommodations-intake-redesign--Copy-?node-id=1-536&viewport=-95%2C-20%2C0.46&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share",
     processImages: []
   }
