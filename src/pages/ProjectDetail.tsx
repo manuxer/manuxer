@@ -432,10 +432,10 @@ const projects = [
   },
   {
     id: 5,
-    title: "Usability engineering",
+    title: "Design consulting at UserWorks",
     category: "UX Specialist",
-    client: "University of Washington",
-    duration: "Academic project",
+    client: "UserWorks",
+    duration: "15 months",
     year: "2019",
     role: "UX Specialist",
     description: "Design - Evaluate - Iterate",
