@@ -7,6 +7,8 @@ import ProjectCard from "@/components/ProjectCard";
 import ContactButton from "@/components/ContactButton";
 import { FileText } from "lucide-react";
 import manuLogoQr from "@/assets/manu-logo-qr.png";
+import manuLogo from "@/assets/manuxer-logo.png";
+import amazonLogo from "@/assets/amazon-phone-logo.png";
 
 // Sample project data
 const featuredProjects = [
@@ -15,7 +17,7 @@ const featuredProjects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce",
-    imageUrl: "/manuxer/src/assets/amazon-phone-logo.png",
+    imageUrl: amazonLogo,
   },
   {
     id: 2,

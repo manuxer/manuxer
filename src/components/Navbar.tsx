@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FileText, Menu, X } from "lucide-react";
+import manuLogo from "@/assets/manuxer-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
       <div className="container-custom h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <img 
-            src="/manuxer/src/assets/manuxer-logo.png" 
+            src={manuLogo} 
             alt="Manuxer Logo" 
             className="h-8 w-auto"
           />

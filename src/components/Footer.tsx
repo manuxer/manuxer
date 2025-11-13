@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import manuLogo from "@/assets/manuxer-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start gap-2">
             <img 
-              src="/manuxer/src/assets/manuxer-logo.png" 
+              src={manuLogo} 
               alt="Manuxer Logo" 
               className="h-6 w-auto"
             />
