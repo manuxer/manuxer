@@ -439,7 +439,7 @@ const projects = [
     year: "2019",
     role: "UX Specialist",
     description: "Design - Evaluate - Iterate",
-    overview: "A comprehensive exploration of usability engineering principles and methodologies through academic research and practical application.",
+    overview: "A comprehensive exploration of usability engineering principles and methodologies through design, research and practical application.",
     challenge: "Understanding and applying systematic usability engineering processes including user research, iterative design, evaluation methods, and design refinement.",
     solution: "Applied structured usability engineering methodology covering the complete design lifecycle: user research, persona development, task analysis, prototyping, usability testing, and iterative improvements based on findings.",
     outcome: "Developed deep understanding of usability engineering principles and delivered practical design solutions validated through systematic evaluation methods.",

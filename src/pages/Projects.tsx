@@ -18,7 +18,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "ALICE - Accommodations & leave intake care expert",
+    title: "Simplifying disability and leave management using AI",
     category: "UX | Product design | Research | Gen AI",
     description: "A conversational Gen AI system for streamlining disability and leave services intake, based on research with employees and ops associates",
     imageUrl: aliceIntro,
