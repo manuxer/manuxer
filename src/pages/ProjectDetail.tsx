@@ -10,6 +10,7 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
 import aliceIntro from "@/assets/alice.png";
+import aiResearch from "@/assets/ai-research";
 
 // Project data from manuxer.com
 const projects = [
@@ -228,7 +229,7 @@ const projects = [
         description: "Clear pathways to human case managers for complex situations or when users prefer human interaction"
       }
     ],
-    processImages: [],
+    processImages: [aiResearch],
   },
   {
     id: 8,
