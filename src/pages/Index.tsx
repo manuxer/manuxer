@@ -20,18 +20,18 @@ const featuredProjects = [
     imageUrl: amazonLogo,
   },
   {
+    id: 9,
+    title: "Simplifying disability and leave management using AI",
+    category: "UX | Product design | Research | Gen AI",
+    description: "A conversational Gen AI system for streamlining disability and leave services intake, based on research with employees and ops associates",
+    imageUrl: aliceIntro,
+  },
+  {
     id: 2,
     title: "Usability evaluation and interaction design",
     category: "UX | Research",
     description: "Usability analysis and redesign of the Postal Service website",
     imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/Logo/USPS_logo.png",
-  },
-  {
-    id: 3,
-    title: "Accessibility evaluation and inclusive design",
-    category: "Accessibility",
-    description: "Accessibility evaluation and remediation of the MBTA intranet website",
-    imageUrl: "https://manupeethambar.github.io/manuxer/files/MBTA/img/MBTA-hero.jpeg",
   },
   {
     id: 4,
