@@ -141,6 +141,7 @@ const projects = [
           methods: ["Workflow analysis sessions (n=8)", "Pain point interviews (n=10)", "Solution co-design workshops (n=6)", "Survey responses (n=14)"]
         }
       },
+    processImages: [aiResearch],
       keyFindings: [
         {
           finding: "Complex Process Confusion",
@@ -229,7 +230,6 @@ const projects = [
         description: "Clear pathways to human case managers for complex situations or when users prefer human interaction"
       }
     ],
-    processImages: [aiResearch],
   },
   {
     id: 8,
