@@ -18,10 +18,10 @@ const projects = [
     id: 10,
     title: "Personal information management in AtoZ",
     category: "UX | Product Design | Research",
-    client: "Amazon - AtoZ Workforce Management",
+    client: "Amazon",
     duration: "12 months",
     year: "2022-2023",
-    role: "UX Designer",
+    role: "Product Designer, UX Researcher",
     description: "Self-service personal information management system for Amazon's global workforce",
     overview: "Designed a comprehensive self-service personal information management system for Amazon's worldwide workforce of 1.6M+ employees. The project aimed to deprecate a third-party tool (PeopleSoft) and build an in-house HCM tool that provides global employees with the ability to manage their personal information through intuitive self-service capabilities.",
     challenge: "Employees' personal information management experience was fragmented across different products and modalities that were inconsistent with each other. Discoverability was a major issue, and employees were bound to rely on HR associates to make changes to their personal information. The existing system lacked a unified, accessible interface for managing diverse types of personal data.",
@@ -129,6 +129,7 @@ const projects = [
     pdfUrl: "/ALICE_presentation_portfolio.pdf",
     research: {
       methodology: "Mixed-methods research combining interviews, usability testing, and surveys with employees and operations associates",
+      processImages: [aiResearch],
       participants: {
         employees: {
           count: 52,
@@ -141,7 +142,6 @@ const projects = [
           methods: ["Workflow analysis sessions (n=8)", "Pain point interviews (n=10)", "Solution co-design workshops (n=6)", "Survey responses (n=14)"]
         }
       },
-    processImages: [aiResearch],
       keyFindings: [
         {
           finding: "Complex Process Confusion",
