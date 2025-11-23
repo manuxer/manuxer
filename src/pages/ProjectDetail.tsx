@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Maximize2 } from "lucide-react";
+import { ArrowLeft, Maximize2, X } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
@@ -538,9 +538,12 @@ const ProjectDetail = () => {
   const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
   const [passwordInput, setPasswordInput] = useState("");
   const [selectedSubProject, setSelectedSubProject] = useState<any>(null);
-  
+
   // PDF modal state
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+
+  // Image lightbox state
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const handlePasswordSubmit = () => {
     if (passwordInput === "manuxer@2025") {
@@ -836,17 +839,26 @@ const ProjectDetail = () => {
                       {project.category === "Artwork / Paintings" ? "Gallery" : "Design process"}
                     </h3>
                     <div className={`grid gap-4 ${
-                      project.category === "Artwork / Paintings" 
-                        ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" 
+                      project.category === "Artwork / Paintings"
+                        ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
                         : "grid-cols-1"
                     }`}>
                       {project.processImages.map((img: string, index: number) => (
-                        <div key={index} className="rounded-lg overflow-hidden">
-                          <img 
-                            src={img} 
-                            alt={`${project.category === "Artwork / Paintings" ? "Artwork" : "Design process"} for ${project.title}`}
-                            className="w-full h-auto"
-                          />
+                        <div
+                          key={index}
+                          className="rounded-lg overflow-hidden cursor-pointer group"
+                          onClick={() => setSelectedImage(img)}
+                        >
+                          <div className="relative overflow-hidden">
+                            <img
+                              src={img}
+                              alt={`${project.category === "Artwork / Paintings" ? "Artwork" : "Design process"} for ${project.title}`}
+                              className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+                              <Maximize2 className="w-8 h-8 text-white" />
+                            </div>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -943,8 +955,8 @@ const ProjectDetail = () => {
           <div className="w-full h-full flex flex-col">
             <div className="flex items-center justify-between p-4 border-b">
               <DialogTitle className="text-lg font-semibold">Full presentation</DialogTitle>
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 size="sm"
                 onClick={() => setIsPdfModalOpen(false)}
               >
@@ -961,6 +973,28 @@ const ProjectDetail = () => {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Image Lightbox */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center cursor-pointer"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative w-[70vw] h-[70vh] flex items-center justify-center cursor-default" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={selectedImage}
+              alt="Expanded view"
+              className="w-full h-full object-contain rounded-lg"
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-12 right-0 p-2 bg-white/20 hover:bg-white/40 rounded-full transition-colors"
+            >
+              <X className="w-6 h-6 text-white" />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

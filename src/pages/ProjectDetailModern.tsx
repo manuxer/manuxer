@@ -294,10 +294,10 @@ const ProjectDetailModern = () => {
       {/* Image Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 cursor-pointer"
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center cursor-pointer"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center cursor-default" onClick={(e) => e.stopPropagation()}>
+          <div className="relative w-[70vw] h-[70vh] flex items-center justify-center cursor-default" onClick={(e) => e.stopPropagation()}>
             <img
               src={selectedImage}
               alt="Expanded view"
@@ -305,7 +305,7 @@ const ProjectDetailModern = () => {
             />
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              className="absolute -top-12 right-0 p-2 bg-white/20 hover:bg-white/40 rounded-full transition-colors"
             >
               <X className="w-6 h-6 text-white" />
             </button>
