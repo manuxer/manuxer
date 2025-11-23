@@ -12,6 +12,16 @@ import amazonLogo from "@/assets/amazon-phone-logo.png";
 import aliceIntro from "@/assets/alice.png";
 import aiResearch from "@/assets/ai-research.png";
 
+// assets from ESS
+import ess1 from "@/assets/ess/users.png";
+import ess2 from "@/assets/ess/personas.png";
+import ess3 from "@/assets/ess/ia.png";
+import ess4 from "@/assets/ess/layout.png";
+import ess5 from "@/assets/ess/ds.png";
+import ess6 from "@/assets/ess/wireframes.png";
+import ess7 from "@/assets/ess/hifi.png";
+import ess8 from "@/assets/ess/ally.png";
+
 // Project data from manuxer.com
 const projects = [
   {
@@ -19,7 +29,7 @@ const projects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product Design | Research",
     client: "Amazon",
-    duration: "12 months",
+    duration: "6 months",
     year: "2022-2023",
     role: "Product Designer, UX Researcher",
     description: "Self-service personal information management system for Amazon's global workforce",
@@ -73,6 +83,7 @@ const projects = [
         "Integration with established design systems (Stencil) accelerates adoption and familiarity"
       ]
     },
+    processImages: [ess1,ess2,ess3,ess4,ess5,ess6,ess7,ess8],
     keyFeatures: [
       "Centralized personal information hub with clear categorization",
       "Self-service editing for names, pronouns, contact information",
