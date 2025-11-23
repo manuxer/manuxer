@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import ContactButton from "@/components/ContactButton";
 import commsImage from "@/assets/comms-case-status.png";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
+import essIntro from "@/assets/ess/ess.png";
 import aliceIntro from "@/assets/alice.png";
 
 // Sample project data (same as in Index)
@@ -14,7 +15,7 @@ const projects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce, improving discoverability and employee autonomy",
-    imageUrl: amazonLogo,
+    imageUrl: essIntro,
   },
   {
     id: 9,

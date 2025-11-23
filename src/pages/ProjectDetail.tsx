@@ -9,8 +9,11 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
+import essIntro from "@/assets/ess/ess.png";
 import aliceIntro from "@/assets/alice.png";
 import aiResearch from "@/assets/ai-research.png";
+import aliceResponsive from "@/assets/alice-responsive.png";
+import aza3ways from "@/assets/aza3ways.png";
 
 // assets from ESS
 import ess1 from "@/assets/ess/users.png";
@@ -37,7 +40,7 @@ const projects = [
     challenge: "Employees' personal information management experience was fragmented across different products and modalities that were inconsistent with each other. Discoverability was a major issue, and employees were bound to rely on HR associates to make changes to their personal information. The existing system lacked a unified, accessible interface for managing diverse types of personal data.",
     solution: "Created a centralized, mobile-first personal information management hub within the AtoZ app. The solution provides employees with one place to manage all their personal information including names, contact details, emergency contacts, addresses, job details, work authorization, and education information. The design emphasizes intuitive information architecture, self-service capabilities, and accessibility across all user segments.",
     outcome: "Successfully enabled self-service personal information management for 1.6M+ global Amazon employees. Deprecated third-party PeopleSoft tool, moving to in-house HCM solution. Improved discoverability through clear information categorization and reduced dependency on HR associates for routine updates.",
-    imageUrl: amazonLogo,
+    imageUrl: essIntro,
     // pdfUrl: "/Port_M_compressed.pdf",
     research: {
       methodology: "Foundational research combining historic data analysis, persona development, employee anecdotes, and iterative usability testing",
@@ -138,10 +141,10 @@ const projects = [
     //figmaEmbed: "https://embed.figma.com/proto/z7Yl1XZPXWPpprG7tEro1p/ALICE---Modified-Work-Arrangements--Copy-?page-id=43161%3A40472&node-id=43161-40473&viewport=494%2C513%2C0.13&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=43161%3A40473&embed-host=share",
     outcome: "Research validated strong user need for an AI-assisted intake system. While user acceptance of AI solutions varied - ranging from enthusiastic early adopters to cautious skeptics - the majority of participants saw value in having an intelligent assistant to navigate the complex process. Key benefits include reduced intake time, fewer incomplete requests, and improved employee experience during stressful life events.",
     imageUrl: aliceIntro,
+    processImages: [aliceResponsive, aiResearch, aza3ways],
     pdfUrl: "/ALICE_presentation_portfolio.pdf",
     research: {
       methodology: "Mixed-methods research combining interviews, usability testing, and surveys with employees and operations associates",
-      processImages: [aiResearch],
       participants: {
         employees: {
           count: 52,

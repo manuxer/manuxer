@@ -9,6 +9,7 @@ import { FileText } from "lucide-react";
 import manuLogoQr from "@/assets/manu-logo-qr.png";
 import manuLogo from "@/assets/manuxer-logo.png";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
+import essIntro from "@/assets/ess/ess.png";
 import aliceIntro from "@/assets/alice.png";
 
 // Sample project data
@@ -18,7 +19,7 @@ const featuredProjects = [
     title: "Personal information management in AtoZ",
     category: "UX | Product design | Research",
     description: "Self-service personal information management system for Amazon's global workforce",
-    imageUrl: amazonLogo,
+    imageUrl: essIntro,
   },
   {
     id: 9,
