@@ -10,6 +10,19 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
 
+// assets from ESS
+import ess1 from "@/assets/ess/users.png";
+import ess2 from "@/assets/ess/personas.png";
+import ess3 from "@/assets/ess/ia.png";
+import ess4 from "@/assets/ess/layout.png";
+import ess5 from "@/assets/ess/ds.png";
+import ess6 from "@/assets/ess/wireframes.png";
+import ess7 from "@/assets/ess/hifi.png";
+import ess8 from "@/assets/ess/ally.png";
+import ess9 from "@/assets/ess/research.png";
+import ess10 from "@/assets/ess/process.png";
+import ess11 from "@/assets/ess/userflow.png";
+
 const projects = [
   {
     id: 10,
@@ -34,49 +47,35 @@ const projects = [
       {
         title: "Research & Discovery",
         images: [
-          { src: "", alt: "User research findings" },
-          { src: "", alt: "Employee personas" }
+          { src: ess1, alt: "End users" },
+          { src: ess2, alt: "Employee personas" }
         ]
       },
       {
         title: "Information Architecture",
         images: [
-          { src: "", alt: "IA structure" },
-          { src: "", alt: "User flows" }
-        ]
-      },
-      {
-        title: "Design & Prototyping",
-        images: [
-          { src: "", alt: "Wireframes" },
-          { src: "", alt: "High fidelity designs" }
-        ]
-      },
-      {
-        title: "Usability Testing",
-        images: [
-          { src: "", alt: "Testing session" },
-          { src: "", alt: "User feedback" }
+          { src: ess3, alt: "IA structure" },
+          { src: ess11, alt: "User flows" }
         ]
       },
       {
         title: "Design System Integration",
         images: [
-          { src: "", alt: "Design system components" },
-          { src: "", alt: "Implementation guidelines" }
+          { src: ess5, alt: "Design system components" }
+        ]
+      },
+      {
+        title: "Design & Prototyping",
+        images: [
+          { src: ess6, alt: "Wireframes" },
+          { src: ess7, alt: "High fidelity designs" }
         ]
       }
     ],
     keyFeatures: [
       "Centralized personal information hub with clear categorization",
-      "Self-service editing for names, pronouns, contact information",
-      "Address management (permanent, home, mailing)",
-      "Emergency contacts management",
-      "Job details and supervisor information",
-      "Work authorization and citizenship data",
-      "Education information management",
-      "Mobile-optimized responsive design",
-      "Amazon Stencil Design System integration"
+      "Self-service editing and changes",
+      "Mobile-optimized responsive design"
     ],
     technologies: ["Amazon Stencil Design System", "Figma", "Mobile-first responsive design", "Accessibility guidelines"],
   }

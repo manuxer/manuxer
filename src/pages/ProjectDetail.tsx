@@ -38,7 +38,7 @@ const projects = [
     solution: "Created a centralized, mobile-first personal information management hub within the AtoZ app. The solution provides employees with one place to manage all their personal information including names, contact details, emergency contacts, addresses, job details, work authorization, and education information. The design emphasizes intuitive information architecture, self-service capabilities, and accessibility across all user segments.",
     outcome: "Successfully enabled self-service personal information management for 1.6M+ global Amazon employees. Deprecated third-party PeopleSoft tool, moving to in-house HCM solution. Improved discoverability through clear information categorization and reduced dependency on HR associates for routine updates.",
     imageUrl: amazonLogo,
-    pdfUrl: "/Port_M_compressed.pdf",
+    // pdfUrl: "/Port_M_compressed.pdf",
     research: {
       methodology: "Foundational research combining historic data analysis, persona development, employee anecdotes, and iterative usability testing",
       participants: {
@@ -83,7 +83,7 @@ const projects = [
         "Integration with established design systems (Stencil) accelerates adoption and familiarity"
       ]
     },
-    processImages: [ess1,ess2,ess3,ess4,ess5,ess6,ess7,ess8],
+    processImages: [ess1, ess2, ess3, ess4, ess5, ess6, ess7, ess8],
     keyFeatures: [
       "Centralized personal information hub with clear categorization",
       "Self-service editing for names, pronouns, contact information",
