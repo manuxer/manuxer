@@ -11,22 +11,22 @@ import { useToast } from "@/hooks/use-toast";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
 import commsImage from "@/assets/comms-case-status.png";
 
-import cs1 from "@assets/case_status/cs1.png";
-import cs2 from "@assets/case_status/cs2.png";
-import cs3 from "@assets/case_status/cs3.png";
-import cs4 from "@assets/case_status/cs4.png";
-import cs5 from "@assets/case_status/cs5.png";
-import cs6 from "@assets/case_status/cs6.png";
-import cs7 from "@assets/case_status/cs7.png";
-import cs8 from "@assets/case_status/cs8.png";
-import cs9 from "@assets/case_status/cs9.png";
-import cs10 from "@assets/case_status/cs10.png";
-import cs11 from "@assets/case_status/cs11.png";
-import cs12 from "@assets/case_status/cs12.png";
-import cs13 from "@assets/case_status/cs13.png";
-import cs14 from "@assets/case_status/cs14.png";
-import cs15 from "@assets/case_status/cs15.png";
-import cs16 from "@assets/case_status/cs16.png";
+import cs1 from "@/assets/case_status/cs1.png";
+import cs2 from "@/assets/case_status/cs2.png";
+import cs3 from "@/assets/case_status/cs3.png";
+import cs4 from "@/assets/case_status/cs4.png";
+import cs5 from "@/assets/case_status/cs5.png";
+import cs6 from "@/assets/case_status/cs6.png";
+import cs7 from "@/assets/case_status/cs7.png";
+import cs8 from "@/assets/case_status/cs8.png";
+import cs9 from "@/assets/case_status/cs9.png";
+import cs10 from "@/assets/case_status/cs10.png";
+import cs11 from "@/assets/case_status/cs11.png";
+import cs12 from "@/assets/case_status/cs12.png";
+import cs13 from "@/assets/case_status/cs13.png";
+import cs14 from "@/assets/case_status/cs14.png";
+import cs15 from "@/assets/case_status/cs15.png";
+import cs16 from "@/assets/case_status/cs16.png";
 
 const projects = [
   {
