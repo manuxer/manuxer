@@ -14,6 +14,13 @@ import aliceFlow2 from "@/assets/alice-flow2.png";
 import aliceFlow3 from "@/assets/alice-flow3.png";
 import aliceResponsive from "@/assets/alice-responsive.png";
 
+import alice1 from "@/assets/alice/alice1.png";
+import alice2 from "@/assets/alice/alice2.png";
+import alice3 from "@/assets/alice/alice3.png";
+import alice4 from "@/assets/alice/alice4.png";
+import alice5 from "@/assets/alice/alice5.png";
+import alice6 from "@/assets/alice/alice6.png";
+
 const projects = [
   {
     id: 9,
@@ -33,7 +40,7 @@ const projects = [
       icon: "↗",
       text: "Streamlined accommodation intake process with 35% of users enthusiastically adopting AI assistance"
     },
-    pdfUrl: "/ALICE_presentation_portfolio.pdf",
+    // pdfUrl: "/ALICE_presentation_portfolio.pdf",
     research: {
       methodology: "Mixed-methods research combining interviews, usability testing, and surveys with employees and operations associates",
       participants: {
@@ -101,16 +108,18 @@ const projects = [
         },
         skeptical: {
           percentage: 20,
-          characteristics: "Preferred human interaction, concerned about AI making mistakes in sensitive situations, worried about job displacement for DLS staff",
+          characteristics: "Preferred human interaction, concerned about AI making mistakes in sensitive situations",
           feedback: "Wanted option to bypass AI entirely, needed strong human oversight, valued clear escalation to human case managers"
         }
       }
     },
     journeyWalkthrough: [
-      { src: aliceFlow1, alt: "ALICE conversation flow step 1" },
-      { src: aliceFlow2, alt: "ALICE conversation flow step 2" },
-      { src: aliceFlow3, alt: "ALICE conversation flow step 3" },
-      { src: aliceResponsive, alt: "ALICE responsive design" }
+      { src: alice1, alt: "ALICE journey walkthrough" },
+      { src: alice2, alt: "ALICE journey walkthrough" },
+      { src: alice3, alt: "ALICE journey walkthrough" },
+      { src: alice4, alt: "ALICE journey walkthrough" },
+      { src: alice5, alt: "ALICE journey walkthrough" },
+      { src: alice6, alt: "ALICE journey walkthrough" }      
     ],
     keyFeatures: [
       "Conversational Gen AI-powered intake system",
@@ -121,7 +130,7 @@ const projects = [
       "Human escalation pathways",
       "Mobile-optimized interface"
     ],
-    technologies: ["Gen AI/LLM", "OCR Technology", "Figma", "User Research Tools", "Accessibility Guidelines"],
+    technologies: ["Gen AI/LLM", "Document extraction", "Predictive UX", "Intelligent Assistive Interfaces", "Conversation design", "Figma"],
   }
 ];
 
@@ -364,7 +373,7 @@ const ProjectDetailAlice = () => {
               {project.journeyWalkthrough && project.journeyWalkthrough.map((image, idx) => (
                 <div
                   key={idx}
-                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
+                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
                   onClick={() => setSelectedImage(image.src)}
                 >
                   {image.src ? (

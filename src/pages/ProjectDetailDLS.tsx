@@ -11,6 +11,23 @@ import { useToast } from "@/hooks/use-toast";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
 import commsImage from "@/assets/comms-case-status.png";
 
+import cs1 from "@assets/case_status/cs1.png";
+import cs2 from "@assets/case_status/cs2.png";
+import cs3 from "@assets/case_status/cs3.png";
+import cs4 from "@assets/case_status/cs4.png";
+import cs5 from "@assets/case_status/cs5.png";
+import cs6 from "@assets/case_status/cs6.png";
+import cs7 from "@assets/case_status/cs7.png";
+import cs8 from "@assets/case_status/cs8.png";
+import cs9 from "@assets/case_status/cs9.png";
+import cs10 from "@assets/case_status/cs10.png";
+import cs11 from "@assets/case_status/cs11.png";
+import cs12 from "@assets/case_status/cs12.png";
+import cs13 from "@assets/case_status/cs13.png";
+import cs14 from "@assets/case_status/cs14.png";
+import cs15 from "@assets/case_status/cs15.png";
+import cs16 from "@assets/case_status/cs16.png";
+
 const projects = [
   {
     id: 8,
@@ -30,7 +47,7 @@ const projects = [
       icon: "↗",
       text: "Reduced inquiries by 45% and improved employee satisfaction by 60%"
     },
-    pdfUrl: "/DLS_Communication_Case_Status.pdf",
+    // pdfUrl: "/DLS_Communication_Case_Status.pdf",
     research: {
       methodology: "Mixed-methods research combining quantitative surveys and qualitative interviews",
       participants: {
@@ -81,10 +98,22 @@ const projects = [
       ]
     },
     journeyWalkthrough: [
-      { src: "", alt: "Employee case status dashboard" },
-      { src: "", alt: "Case manager update interface" },
-      { src: "", alt: "Notification flow" },
-      { src: "", alt: "Timeline and status stages" }
+      { src: cs1, alt: "Employee case status user journey" },
+      { src: cs2, alt: "Employee case status user journey" },
+      { src: cs3, alt: "Employee case status user journey" },
+      { src: cs4, alt: "Employee case status user journey" },
+      { src: cs5, alt: "Employee case status user journey" },
+      { src: cs6, alt: "Employee case status user journey" },
+      { src: cs7, alt: "Employee case status user journey" },
+      { src: cs8, alt: "Employee case status user journey" },
+      { src: cs9, alt: "Employee case status user journey" },
+      { src: cs10, alt: "Employee case status user journey" },
+      { src: cs11, alt: "Employee case status user journey" },
+      { src: cs12, alt: "Employee case status user journey" },
+      { src: cs13, alt: "Employee case status user journey" },
+      { src: cs14, alt: "Employee case status user journey" },
+      { src: cs15, alt: "Employee case status user journey" },
+      { src: cs16, alt: "Employee case status user journey" }
     ],
     keyFeatures: [
       "Real-time case status updates",
@@ -95,7 +124,7 @@ const projects = [
       "Secure messaging system",
       "Timeline transparency"
     ],
-    technologies: ["Figma", "User Research Tools", "Accessibility Guidelines", "React Frontend", "Backend Integration"],
+    technologies: ["Figma", "Gen AI"."User Research", "Accessibility", "Service design"],
   }
 ];
 
@@ -311,7 +340,7 @@ const ProjectDetailDLS = () => {
               {project.journeyWalkthrough && project.journeyWalkthrough.map((image, idx) => (
                 <div
                   key={idx}
-                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
+                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
                   onClick={() => image.src && setSelectedImage(image.src)}
                 >
                   {image.src ? (
