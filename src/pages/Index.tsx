@@ -11,6 +11,7 @@ import manuLogo from "@/assets/manuxer-logo.png";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
 import essIntro from "@/assets/ess/ess.png";
 import aliceIntro from "@/assets/alice.png";
+import commsImage from "@/assets/comms-case-status.png";
 
 // Sample project data
 const featuredProjects = [
