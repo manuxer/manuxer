@@ -29,18 +29,18 @@ const featuredProjects = [
     imageUrl: aliceIntro,
   },
   {
+    id: 8,
+    title: "Communication on case status",
+    category: "UX | Product design | Research",
+    description: "Improving communication transparency between case managers and employees in the disability leave process",
+    imageUrl: commsImage,
+  },
+  {
     id: 2,
     title: "Usability evaluation and interaction design",
     category: "UX | Research",
     description: "Usability analysis and redesign of the Postal Service website",
     imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/Logo/USPS_logo.png",
-  },
-  {
-    id: 4,
-    title: "My experiments",
-    category: "UI/UX",
-    description: "A collection of my design experiments",
-    imageUrl: "https://manupeethambar.github.io/manuxer/files/Experiments/VisualSearch.png",
   },
 ];
 
