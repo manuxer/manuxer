@@ -248,6 +248,73 @@ const ProjectDetailModern = () => {
           <section key={idx} className={`w-full py-16 md:py-24 px-4 md:px-8 lg:px-12 ${idx % 2 === 0 ? 'bg-white' : 'bg-muted/30'}`}>
             <div className="max-w-7xl mx-auto">
               <h2 className="text-3xl font-bold mb-12">{section.title}</h2>
+
+              {/* Research & Discovery Section - Show research details */}
+              {section.title === "Research & Discovery" && (project as any).research && (
+                <div className="mb-16 space-y-12">
+                  {/* Methodology */}
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">Methodology</h3>
+                    <p className="text-muted-foreground leading-relaxed">{(project as any).research.methodology}</p>
+                  </div>
+
+                  {/* Participants */}
+                  <div>
+                    <h3 className="text-xl font-semibold mb-6">Research Participants</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {(project as any).research.participants.employees && (
+                        <div className="bg-white border border-gray-200 rounded-xl p-6">
+                          <h4 className="font-semibold text-lg mb-3">Employees</h4>
+                          <p className="text-sm text-muted-foreground mb-4">
+                            <span className="font-medium text-foreground">{(project as any).research.participants.employees.count}</span>
+                            {" "}{(project as any).research.participants.employees.count !== "Multiple segments" && "participants"}
+                          </p>
+                          <p className="text-sm text-muted-foreground mb-4">{(project as any).research.participants.employees.demographics}</p>
+                          <div className="space-y-2">
+                            {(project as any).research.participants.employees.methods.map((method: string, idx: number) => (
+                              <div key={idx} className="flex items-start gap-2 text-sm">
+                                <span className="text-primary font-bold">•</span>
+                                <span className="text-muted-foreground">{method}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Key Findings */}
+                  <div>
+                    <h3 className="text-xl font-semibold mb-6">Key Findings</h3>
+                    <div className="space-y-4">
+                      {(project as any).research.keyFindings.map((finding: any, idx: number) => (
+                        <div key={idx} className="border-l-4 border-orange-400 pl-6 py-3">
+                          <h5 className="font-semibold text-foreground mb-2">{finding.finding}</h5>
+                          <p className="text-sm text-muted-foreground mb-2">{finding.details}</p>
+                          <p className="text-sm font-medium text-orange-600">Design Impact: {finding.impact}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Insights */}
+                  <div>
+                    <h3 className="text-xl font-semibold mb-6">Research Insights</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {(project as any).research.insights.map((insight: string, idx: number) => (
+                        <div key={idx} className="bg-white border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start gap-3">
+                            <span className="text-primary font-bold text-lg flex-shrink-0">{idx + 1}</span>
+                            <p className="text-sm text-muted-foreground">{insight}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Images Grid */}
               <div className="grid lg:grid-cols-2 gap-8">
                 {section.images.map((image, imgIdx) => (
                   <div
