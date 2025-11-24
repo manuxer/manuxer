@@ -124,7 +124,7 @@ const projects = [
       "Secure messaging system",
       "Timeline transparency"
     ],
-    technologies: ["Figma", "Gen AI"."User Research", "Accessibility", "Service design"],
+    technologies: ["Figma", "Gen AI", "User Research", "Accessibility", "Service design"],
   }
 ];
 
