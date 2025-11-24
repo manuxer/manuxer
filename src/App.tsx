@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import ProjectDetailModern from "./pages/ProjectDetailModern";
+import ProjectDetailAlice from "./pages/ProjectDetailAlice";
+import ProjectDetailDLS from "./pages/ProjectDetailDLS";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/10" element={<ProjectDetailModern />} />
+          <Route path="/projects/9" element={<ProjectDetailAlice />} />
+          <Route path="/projects/8" element={<ProjectDetailDLS />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
