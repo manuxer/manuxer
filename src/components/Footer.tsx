@@ -15,9 +15,9 @@ const Footer = () => {
               alt="Manuxer Logo" 
               className="h-6 w-auto"
             />
-            <p className="text-sm text-muted-foreground">
+{/*            <p className="text-sm text-muted-foreground">
               Product designer based in DMV
-            </p>
+            </p>*/}
           </div>
           
           <div className="flex flex-col md:flex-row gap-4 md:gap-8">
