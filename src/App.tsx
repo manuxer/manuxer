@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
@@ -16,22 +17,30 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => {
+  useScrollToTop();
+
+  return (
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/projects/10" element={<ProjectDetailModern />} />
+      <Route path="/projects/9" element={<ProjectDetailAlice />} />
+      <Route path="/projects/8" element={<ProjectDetailDLS />} />
+      <Route path="/projects/:id" element={<ProjectDetail />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/10" element={<ProjectDetailModern />} />
-          <Route path="/projects/9" element={<ProjectDetailAlice />} />
-          <Route path="/projects/8" element={<ProjectDetailDLS />} />
-          <Route path="/projects/:id" element={<ProjectDetail />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+      <AppContent />
     </TooltipProvider>
   </QueryClientProvider>
 );
