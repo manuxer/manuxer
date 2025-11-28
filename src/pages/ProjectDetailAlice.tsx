@@ -41,7 +41,7 @@ const projects = [
     ],
     impact: {
       icon: "↗",
-      text: "Streamlined accommodation intake process with 35% of users enthusiastically adopting AI assistance"
+      text: "Streamlined accommodation intake process by improved employee experience during stressful life events, scaled adoption of AI"
     },
     // pdfUrl: "/ALICE_presentation_portfolio.pdf",
     research: {
@@ -220,7 +220,7 @@ const ProjectDetailAlice = () => {
             </div>
 
             {/* Impact Section */}
-            <div className="bg-orange-50 border border-orange-200/50 rounded-2xl p-8">
+            <div className="bg-orange-50 border border-orange-200/50 rounded-2xl p-8 mb-8">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-orange-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
