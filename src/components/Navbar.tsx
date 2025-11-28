@@ -1,15 +1,23 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FileText, Menu, X } from "lucide-react";
 import manuLogo from "@/assets/manuxer-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const isActive = (path: string) => {
+    if (path === "/") {
+      return location.pathname === "/";
+    }
+    return location.pathname.startsWith(path);
   };
 
   return (
@@ -30,9 +38,9 @@ const Navbar = () => {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link to="/projects" className="text-sm hover:text-foreground/80 transition-colors">Projects</Link>
-          <Link to="/about" className="text-sm hover:text-foreground/80 transition-colors">About</Link>
-          <Link to="/resume" className="text-sm hover:text-foreground/80 transition-colors">Resume</Link>
+          <Link to="/projects" className={`text-sm transition-colors pb-2 border-b-2 ${isActive("/projects") ? "text-foreground border-b-black" : "text-foreground/60 hover:text-foreground/80 border-b-transparent"}`}>Projects</Link>
+          <Link to="/about" className={`text-sm transition-colors pb-2 border-b-2 ${isActive("/about") ? "text-foreground border-b-black" : "text-foreground/60 hover:text-foreground/80 border-b-transparent"}`}>About</Link>
+          <Link to="/resume" className={`text-sm transition-colors pb-2 border-b-2 ${isActive("/resume") ? "text-foreground border-b-black" : "text-foreground/60 hover:text-foreground/80 border-b-transparent"}`}>Resume</Link>
           <Button asChild size="sm">
             <a href="mailto:manuxdesign@gmail.com">
               Contact

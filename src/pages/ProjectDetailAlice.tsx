@@ -220,9 +220,13 @@ const ProjectDetailAlice = () => {
             </div>
 
             {/* Impact Section */}
-            <div className="bg-orange-50 border border-orange-200/50 rounded-2xl p-8 mb-16">
+            <div className="bg-orange-50 border border-orange-200/50 rounded-2xl p-8">
               <div className="flex items-start gap-4">
-                <div className="text-3xl font-bold text-orange-600 pt-1">{project.impact.icon}</div>
+                <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-orange-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
                 <div>
                   <h3 className="text-sm font-bold text-orange-600 uppercase tracking-wider mb-2">IMPACT</h3>
                   <p className="text-lg font-semibold text-gray-800">{project.impact.text}</p>
