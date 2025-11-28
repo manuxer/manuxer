@@ -36,6 +36,9 @@ const projects = [
     solution: "Through comprehensive research involving employees and ops associates at Amazon, we proposed ALICE - a Gen AI-powered conversational assistant that guides users through the intake process naturally. ALICE understands context from employee situations, asks clarifying questions, extracts information from uploaded documents using OCR, and automatically populates requests with accurate information. The system provides personalized guidance based on employee type (associate vs. corporate), condition type, and individual circumstances.",
     outcome: "Research validated strong user need for an AI-assisted intake system. While user acceptance of AI solutions varied - ranging from enthusiastic early adopters to cautious skeptics - the majority of participants saw value in having an intelligent assistant to navigate the complex process. Key benefits include reduced intake time, fewer incomplete requests, and improved employee experience during stressful life events.",
     imageUrl: aliceIntro,
+    introImage: : [
+      { src: aliceResponsive, alt: "ALICE on both mobile and desktop" }    
+    ],
     impact: {
       icon: "↗",
       text: "Streamlined accommodation intake process with 35% of users enthusiastically adopting AI assistance"
@@ -225,6 +228,36 @@ const ProjectDetailAlice = () => {
                   <p className="text-lg font-semibold text-gray-800">{project.impact.text}</p>
                 </div>
               </div>
+            </div>
+          </div>
+          {/* Intro image */}
+          <div className="max-w-7xl mx-auto">
+            <div className="space-y-8">
+              {project.introImage && project.introImage.map((image, idx) => (
+                <div
+                  key={idx}
+                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
+                  onClick={() => setSelectedImage(image.src)}
+                >
+                  {image.src ? (
+                    <>
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                        <Maximize2 className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                    </>
+                  ) : (
+                    <div className="flex flex-col items-center justify-center text-gray-500">
+                      <div className="w-12 h-12 bg-gray-400 rounded-lg mb-3"></div>
+                      <p className="text-sm font-medium">{image.alt}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </section>
