@@ -7,22 +7,30 @@ import commsImage from "@/assets/comms-case-status.png";
 import amazonLogo from "@/assets/amazon-phone-logo.png";
 import essIntro from "@/assets/ess/ess.png";
 import aliceIntro from "@/assets/alice.png";
+import asl from "@/assets/hermes/h26.png";
 
 // Sample project data (same as in Index)
 const projects = [
-  {
-    id: 10,
-    title: "Personal information management in AtoZ",
-    category: "UX | Product design | Research",
-    description: "Self-service personal information management system for Amazon's global workforce, improving discoverability and employee autonomy",
-    imageUrl: essIntro,
-  },
   {
     id: 9,
     title: "Simplifying disability & leave management using AI",
     category: "UX | Product design | Research | Gen AI",
     description: "A conversational Gen AI system for streamlining disability and leave services intake, based on research with employees and ops associates",
     imageUrl: aliceIntro,
+  },
+  {
+    id: 11,
+    title: "AI Sign Language Interpretation Platform",
+    category: "UX | Product Design | Research | AI Accessibility",
+    description: "An AI-powered sign language interpretation service supporting workplace accessibility for Amazon's global operations",
+    imageUrl: asl,
+  },
+  {
+    id: 10,
+    title: "Personal information management in AtoZ",
+    category: "UX | Product design | Research",
+    description: "Self-service personal information management system for Amazon's global workforce, improving discoverability and employee autonomy",
+    imageUrl: essIntro,
   },
   {
     id: 8,

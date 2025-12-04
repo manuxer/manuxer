@@ -8,7 +8,34 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import amazonLogo from "@/assets/amazon-phone-logo.png";
+import asl from "@/assets/hermes/h26.png";
+
+import h1 from "@/assets/hermes/h1.png";
+import h2 from "@/assets/hermes/h2.png";
+import h3 from "@/assets/hermes/h3.png";
+import h4 from "@/assets/hermes/h4.png";
+import h5 from "@/assets/hermes/h5.png";
+import h6 from "@/assets/hermes/h6.png";
+import h7 from "@/assets/hermes/h7.png";
+import h8 from "@/assets/hermes/h8.png";
+import h9 from "@/assets/hermes/h9.png";
+import h10 from "@/assets/hermes/h10.png";
+import h11 from "@/assets/hermes/h11.png";
+import h12 from "@/assets/hermes/h12.png";
+import h13 from "@/assets/hermes/h13.png";
+import h14 from "@/assets/hermes/h14.png";
+import h15 from "@/assets/hermes/h15.png";
+import h16 from "@/assets/hermes/h16.png";
+import h17 from "@/assets/hermes/h17.png";
+import h18 from "@/assets/hermes/h18.png";
+import h19 from "@/assets/hermes/h19.png";
+import h20 from "@/assets/hermes/h20.png";
+import h21 from "@/assets/hermes/h21.png";
+import h22 from "@/assets/hermes/h22.png";
+import h23 from "@/assets/hermes/h23.png";
+import h24 from "@/assets/hermes/h24.png";
+import h25 from "@/assets/hermes/h25.png";
+import h26 from "@/assets/hermes/h26.png";
 
 const projects = [
   {
@@ -16,19 +43,19 @@ const projects = [
     title: "AI Sign Language Interpretation Platform",
     subtitle: "Hermes",
     category: "UX | Product Design | Research | AI Accessibility",
-    client: "Amazon - Deaf and Hard of Hearing (DHH) Accessibility",
-    duration: "Ongoing",
-    year: "2024-2025",
+    client: "Amazon - Disability and Leave Services",
+    duration: "10 months",
+    year: "2025",
     role: "Lead Product Designer, UX Researcher",
     description: "An AI-powered sign language interpretation service supporting Deaf and Hard of Hearing employees across Amazon's global operations",
     overview: "Hermes is an AI-powered Sign Language interpretation service designed to support Deaf and Hard of Hearing (DHH) employees across Amazon's global operations. The platform provides real-time AI-generated sign language interpretation, closed captions, transcription, and translation - scaling access to communication resources where human interpreters remain scarce. As the lead Product Designer, I shaped the end-to-end experience from defining the problem through research, prototyping, usability testing, and delivery of the MLP (Minimum Lovable Product) set for pilot deployment.",
     challenge: "Despite millions spent annually on sign language services, Amazon struggles with a severe shortage of interpreters - particularly for night shifts, training sessions, and high-volume sites. This results in 20-40% unfilled interpretation requests (3P vendor-based), up to 79% unfilled requests in certain use cases, and entire sites experiencing 0% fill rate. The shortage delays onboarding, misses training, and reduces inclusion for 3,500+ DHH associates. Additionally, there is a lack of deaf-culture awareness among managers and the broader workforce, and an absence of standardized tools or workflows to support DHH employees in Start-Up Meetings, New Hire Orientation, trainings, and floor interactions.",
     solution: "We designed Hermes, an AI-driven interpretation platform with AI-generated signing avatar, closed captions, real-time transcription, English ↔ ASL/SEE/PSE translation, and a web-based interface for SUM coordinators and managers. The solution integrates with MAVIS carts and laptops for trainings, allowing sites to reliably support DHH employees regardless of time of day, interpreter availability, or location.",
     outcome: "Hermes MLP product was launched at sites, directly impacting 3,500+ DHH Amazon employees across site operations spanning SUM, onboarding, training, and daily communication. By integrating AI interpretation with existing workflows, Hermes establishes a scalable accessibility foundation for global operations while closing critical gaps in interpreter reliance and advancing workplace inclusion, belonging, and career progression for DHH associates.",
-    imageUrl: amazonLogo,
+    imageUrl: asl,
     impact: {
       icon: "↗",
-      text: "Scaled accessibility support for 3,500+ DHH employees, closing critical gaps in sign language interpretation"
+      text: "Scaled accessibility support for 3,500+ DHH users, closing critical gaps in sign language interpretation"
     },
     pdfUrl: "",
     research: {
@@ -92,10 +119,32 @@ const projects = [
       ]
     },
     projectOverview: [
-      { src: "", alt: "Hermes avatar interface on MAVIS cart" },
-      { src: "", alt: "Web-based SUM coordinator dashboard" },
-      { src: "", alt: "Real-time transcription and caption display" },
-      { src: "", alt: "Mobile adaptation for manager access" }
+      { src: h1, alt: "project overview" },
+      { src: h2, alt: "project overview" },
+      { src: h3, alt: "project overview" },
+      { src: h4, alt: "project overview" },
+      { src: h5, alt: "project overview" },
+      { src: h6, alt: "project overview" },
+      { src: h7, alt: "project overview" },
+      { src: h8, alt: "project overview" },
+      { src: h9, alt: "project overview" },
+      { src: h10, alt: "project overview" },
+      { src: h11, alt: "project overview" },
+      { src: h12, alt: "project overview" },
+      { src: h13, alt: "project overview" },
+      { src: h14, alt: "project overview" },
+      { src: h15, alt: "project overview" },
+      { src: h16, alt: "project overview" },
+      { src: h17, alt: "project overview" },
+      { src: h18, alt: "project overview" },
+      { src: h19, alt: "project overview" },
+      { src: h20, alt: "project overview" },
+      { src: h21, alt: "project overview" },
+      { src: h22, alt: "project overview" },
+      { src: h23, alt: "project overview" },
+      { src: h24, alt: "project overview" },
+      { src: h25, alt: "project overview" },
+      { src: h26, alt: "project overview" }
     ],
     keyFeatures: [
       "AI-generated ASL interpretation avatar",
@@ -108,7 +157,7 @@ const projects = [
       "Rapid feedback mechanism after each session",
       "Manager education and onboarding flows"
     ],
-    technologies: ["Gen AI/LLM", "Avatar Animation", "Speech Recognition", "Computer Vision", "Web Application", "Mobile Optimization", "Accessibility Standards"],
+    technologies: ["Gen AI/LLM", "Avatar Animation", "Speech Recognition", "Unreal", "Web Application", "Mobile Optimization", "Accessibility Standards"],
   }
 ];
 

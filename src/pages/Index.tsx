@@ -12,16 +12,10 @@ import amazonLogo from "@/assets/amazon-phone-logo.png";
 import essIntro from "@/assets/ess/ess.png";
 import aliceIntro from "@/assets/alice.png";
 import commsImage from "@/assets/comms-case-status.png";
+import asl from "@/assets/hermes/h26.png";
 
 // Sample project data
 const featuredProjects = [
-  {
-    id: 10,
-    title: "Personal information management in AtoZ",
-    category: "UX | Product design | Research",
-    description: "Self-service personal information management system for Amazon's global workforce",
-    imageUrl: essIntro,
-  },
   {
     id: 9,
     title: "Simplifying disability & leave management using AI",
@@ -30,18 +24,25 @@ const featuredProjects = [
     imageUrl: aliceIntro,
   },
   {
+    id: 11,
+    title: "AI Sign Language Interpretation Platform",
+    category: "UX | Product Design | Research | AI Accessibility",
+    description: "An AI-powered sign language interpretation service supporting workplace accessibility for Amazon's global operations",
+    imageUrl: asl,
+  },
+  {
+    id: 10,
+    title: "Personal information management in AtoZ",
+    category: "UX | Product design | Research",
+    description: "Self-service personal information management system for Amazon's global workforce",
+    imageUrl: essIntro,
+  },
+  {
     id: 8,
     title: "Communication on case status",
     category: "UX | Product design | Research",
     description: "Improving communication transparency between case managers and employees in the disability leave process",
     imageUrl: commsImage,
-  },
-  {
-    id: 2,
-    title: "Usability evaluation and interaction design",
-    category: "UX | Research",
-    description: "Usability analysis and redesign of the Postal Service website",
-    imageUrl: "https://manupeethambar.github.io/manuxer/files/USPS/Logo/USPS_logo.png",
   },
 ];
 
