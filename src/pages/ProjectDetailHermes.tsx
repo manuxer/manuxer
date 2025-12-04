@@ -197,11 +197,13 @@ const ProjectDetailHermes = () => {
 
       <main className="flex-1">
         {/* Hero Image */}
-        <div className="w-full h-[50vh] md:h-[60vh] relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Hermes</h1>
-            <p className="text-xl text-blue-700">AI Sign Language Interpretation Platform</p>
-          </div>
+        <div className="w-full h-[50vh] md:h-[60vh] relative overflow-hidden">
+          <img
+            src={project.imageUrl}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         {/* Project Header - Full Width */}
@@ -381,7 +383,7 @@ const ProjectDetailHermes = () => {
               {project.projectOverview && project.projectOverview.map((image, idx) => (
                 <div
                   key={idx}
-                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
+                  className="relative group cursor-pointer rounded-xl overflow-hidden w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center"
                   onClick={() => image.src && setSelectedImage(image.src)}
                 >
                   {image.src ? (
